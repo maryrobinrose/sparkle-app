@@ -16,8 +16,12 @@ const Input = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onFormSubmit(item);
-    handleAddToCart();
+    if (!item) {
+      setMessage('Please enter a dream');
+    } else {
+      onFormSubmit(item);
+      handleAddToCart();
+    }
   };
 
   const handleGoToCart = () => {

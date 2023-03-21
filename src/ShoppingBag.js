@@ -1,7 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
-  const { items, onCheckout } = props;
+  const { items } = props;
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    navigate('/confirmation');
+  };
 
   return (
     <div>
@@ -16,7 +22,7 @@ const ShoppingBag = (props) => {
             ))}
           </ul>
           <p>Total: Good vibes</p>
-          <button onClick={onCheckout}>Checkout</button>
+          <button onClick={handleCheckout}>Checkout</button>
         </>
       )}
     </div>
