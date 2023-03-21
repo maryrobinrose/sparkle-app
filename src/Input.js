@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom';
 const Input = () => {
   const [item, setItem] = useState('');
   const [cart, setCart] = useState([]);
-  const history = useNavigate();
+  const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    setCart([...cart, item]); // add the new item to the cart
-    console.log(`Item "${item}" added to cart.`);
-    alert(`Item "${item}" added to cart.`);
-    setItem(''); // clear the input field
+    setCart([...cart, item]);
+    setMessage(`Item "${item}" added to cart.`);
+    setItem('');
   };
 
   const handleSubmit = (event) => {
@@ -19,7 +19,7 @@ const Input = () => {
   };
 
   const handleGoToCart = () => {
-    history('/cart'); // navigate to the cart page
+    navigate('/cart');
   };
 
   return (
@@ -29,6 +29,7 @@ const Input = () => {
         <input type="text" placeholder="My dream job..." value={item} onChange={(e) => setItem(e.target.value)} />
         <button type="submit">Add to bag</button>
       </form>
+      <p>{message}</p>
       <button onClick={handleGoToCart}>Go to Cart</button>
     </div>
   );
