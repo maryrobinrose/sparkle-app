@@ -1,47 +1,32 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Input from './Input';
 import ShoppingBag from './ShoppingBag';
 import Confirmation from './Confirmation';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
   const [items, setItems] = useState([]);
-
-  const handleButtonClick = () => {
-    setCurrentPage('input');
-  };
 
   const handleFormSubmit = (item) => {
     setItems([...items, item]);
-    setCurrentPage('shoppingBag');
   };
 
   const handleCheckout = () => {
     setItems([]);
-    setCurrentPage('confirmation');
   };
 
-  let pageContent;
-
-  switch (currentPage) {
-    case 'home':
-      pageContent = <Home onButtonClick={handleButtonClick} />;
-      break;
-    case 'input':
-      pageContent = <Input onFormSubmit={handleFormSubmit} />;
-      break;
-    case 'shoppingBag':
-      pageContent = <ShoppingBag items={items} onCheckout={handleCheckout} />;
-      break;
-    case 'confirmation':
-      pageContent = <Confirmation onButtonClick={handleButtonClick} />;
-      break;
-    default:
-      pageContent = <div>Page not found</div>;
-  }
-
-  return <div>{pageContent}</div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/input" element={<Input onFormSubmit={handleFormSubmit} />} />
+        <Route path="/shopping-bag" element={<ShoppingBag items={items} onCheckout={handleCheckout} />} />
+        <Route path="/confirmation" element={<Confirmation onButtonClick={handleCheckout} />} />
+        <Route path="*" element={<div>Page not found</div>} />
+      </Routes>
+  </BrowserRouter>
+);
 };
 
 export default App;

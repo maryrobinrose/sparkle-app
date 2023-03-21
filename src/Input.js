@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Input = () => {
+const Input = (props) => {
+  const { onFormSubmit } = props;
   const [item, setItem] = useState('');
   const [cart, setCart] = useState([]);
   const [message, setMessage] = useState('');
@@ -15,11 +16,12 @@ const Input = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    onFormSubmit(item);
     handleAddToCart();
   };
 
   const handleGoToCart = () => {
-    navigate('/cart');
+    navigate('/shopping-bag');
   };
 
   return (

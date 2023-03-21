@@ -1,16 +1,21 @@
 import React from 'react';
 
-const ShoppingBag = ({ items, onCheckout }) => {
+const ShoppingBag = (props) => {
+  const { items, onCheckout } = props;
+
   return (
     <div>
       <h1>Shopping Bag</h1>
-      <ul>
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-      <p>Total: Good Vibes</p>
-      <button onClick={onCheckout}>Checkout</button>
+      {items.length === 0 ? (
+        <p>Your bag is empty</p>
+      ) : (
+        <ul>
+          {items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      )}
+      <button onClick={onCheckout} disabled={items.length === 0}>Checkout</button>
     </div>
   );
 };
