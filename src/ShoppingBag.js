@@ -5,7 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
   const [items, setItems] = useState([]); // create state variable for items
-  const [selectedItem, setSelectedItem] = useState(null); // create state variable for selected item
+  const [selectedItemIndex, setSelectedItemIndex] = useState(null); // create state variable for selected item index
+  const [editedItemValue, setEditedItemValue] = useState(''); // create state variable for edited item value
   const [editing, setEditing] = useState(false); // create state variable for editing mode
   const navigate = useNavigate();
 
@@ -28,16 +29,18 @@ const ShoppingBag = (props) => {
   };
 
   const handleEdit = (index) => {
-    setSelectedItem(items[index]);
+    setSelectedItemIndex(index);
+    setEditedItemValue(items[index]);
     setEditing(true);
   };
 
-  const handleSave = (newItem) => {
+  const handleSave = () => {
+    console.log('save is clicked');
     const newItems = [...items];
-    const index = newItems.indexOf(selectedItem);
-    newItems[index] = newItem;
+    newItems[selectedItemIndex] = editedItemValue;
     setItems(newItems);
-    setSelectedItem(null);
+    setSelectedItemIndex(null);
+    setEditedItemValue('');
     setEditing(false);
   };
 
@@ -58,14 +61,14 @@ const ShoppingBag = (props) => {
           <ul>
             {items.map((item, index) => (
               <li key={index}>
-                {editing && selectedItem === item ? (
+                {editing && selectedItemIndex === index ? (
                   <>
-                    <input
-                      type="text"
-                      defaultValue={item}
-                      onBlur={(e) => setSelectedItem(e.target.value)}
-                    />
-                    <button onClick={() => handleSave(selectedItem)}>Save</button>
+                    <input 
+                      type="text" 
+                      value={editedItemValue} 
+                      onChange={(e) => setEditedItemValue(e.target.value)} 
+                      />
+                    <button onClick={handleSave}>Save</button>
                     <button onClick={() => setEditing(false)}>Cancel</button>
                   </>
                 ) : (
