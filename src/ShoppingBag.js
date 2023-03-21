@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
   const [items, setItems] = useState(props.items); // create state variable for items
+  const [selectedItem, setSelectedItem] = useState(null); // create state variable for selected item
+  const [editing, setEditing] = useState(false); // create state variable for editing mode
   const navigate = useNavigate();
 
   const handleCheckout = () => {
@@ -12,9 +14,27 @@ const ShoppingBag = (props) => {
   };
 
   const handleDelete = (index) => {
+    if (!editing) {
+      const newItems = [...items];
+      newItems.splice(index, 1);
+      setItems(newItems);
+    } else {
+      setEditing(false);
+    }
+  };
+
+  const handleEdit = (index) => {
+    setSelectedItem(items[index]);
+    setEditing(true);
+  };
+
+  const handleSave = (newItem) => {
     const newItems = [...items];
-    newItems.splice(index, 1);
+    const index = newItems.indexOf(selectedItem);
+    newItems[index] = newItem;
     setItems(newItems);
+    setSelectedItem(null);
+    setEditing(false);
   };
 
   return (
@@ -29,8 +49,23 @@ const ShoppingBag = (props) => {
           <ul>
             {items.map((item, index) => (
               <li key={index}>
-                {item}
-                <button onClick={() => handleDelete(index)}>Delete</button> {/* add a delete button */}
+                {editing && selectedItem === item ? (
+                  <>
+                    <input
+                      type="text"
+                      defaultValue={item}
+                      onChange={(e) => setSelectedItem(e.target.value)}
+                    />
+                    <button onClick={() => handleSave(selectedItem)}>Save</button>
+                    <button onClick={() => setEditing(false)}>Cancel</button>
+                  </>
+                ) : (
+                  <>
+                    {item}
+                    <button onClick={() => handleEdit(index)}>Edit</button>
+                    <button onClick={() => handleDelete(index)}>Delete</button>
+                  </>
+                )}
               </li>
             ))}
           </ul>
