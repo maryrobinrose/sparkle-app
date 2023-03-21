@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
-  const [items, setItems] = useState(props.items); // create state variable for items
+  const [items, setItems] = useState([]); // create state variable for items
   const [selectedItem, setSelectedItem] = useState(null); // create state variable for selected item
   const [editing, setEditing] = useState(false); // create state variable for editing mode
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setItems(props.items);
+  }, [props.items]);
 
   const handleCheckout = () => {
     navigate('/confirmation');
@@ -37,10 +41,15 @@ const ShoppingBag = (props) => {
     setEditing(false);
   };
 
+  const handleBack = () => {
+    navigate('/input');
+    window.location.reload();
+  };
+
   return (
     <div>
       <Header />
-      <button onClick={() => navigate(-1)}>Back</button>
+      <button onClick={handleBack}>Back</button>
       <h1>Shopping Bag</h1>
       {items.length === 0 ? (
         <p>Your bag is empty</p>
