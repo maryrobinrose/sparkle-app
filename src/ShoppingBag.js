@@ -9,13 +9,16 @@ const ShoppingBag = (props) => {
       {items.length === 0 ? (
         <p>Your bag is empty</p>
       ) : (
-        <ul>
-          {items.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        <>
+          <ul>
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p>Total: Good vibes</p>
+          <button onClick={onCheckout}>Checkout</button>
+        </>
       )}
-      <button onClick={onCheckout} disabled={items.length === 0}>Checkout</button>
     </div>
   );
 };
