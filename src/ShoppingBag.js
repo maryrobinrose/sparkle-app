@@ -11,6 +11,7 @@ const ShoppingBag = (props) => {
 
   return (
     <div>
+      <button onClick={() => navigate(-1)}>Back</button>
       <h1>Shopping Bag</h1>
       {items.length === 0 ? (
         <p>Your bag is empty</p>

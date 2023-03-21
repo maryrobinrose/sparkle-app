@@ -30,6 +30,7 @@ const Input = (props) => {
 
   return (
     <div>
+      <button onClick={() => navigate(-1)}>Back</button> 
       <h1>Enter your dream here:</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="My dream job..." value={item} onChange={(e) => setItem(e.target.value)} />
