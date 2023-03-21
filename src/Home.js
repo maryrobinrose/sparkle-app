@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -10,9 +12,11 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
       <h1>Sparkle App</h1>
       <p>Welcome to Sparkle App! The #1 place to order your dreams!</p>
       <button onClick={handleButtonClick}>Order Now!</button>
+      <Footer />
     </div>
   );
 };

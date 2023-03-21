@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const Confirmation = ({ onButtonClick }) => {
@@ -11,11 +13,13 @@ const Confirmation = ({ onButtonClick }) => {
 
   return (
     <div>
+      <Header />
       <h1>Confirmation</h1>
       <span>Guaranteed Delivery!*</span>
       <p>Your dreams are on the way!</p>
       <button onClick={handleOrderAgain}>Order Again!</button>
       <p>*Arrival times may vary. Trust the timing of the Universe!</p>
+      <Footer />
     </div>
   );
 };
