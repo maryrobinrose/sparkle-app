@@ -54,7 +54,7 @@ const ShoppingBag = (props) => {
                     <input
                       type="text"
                       defaultValue={item}
-                      onChange={(e) => setSelectedItem(e.target.value)}
+                      onBlur={(e) => setSelectedItem(e.target.value)}
                     />
                     <button onClick={() => handleSave(selectedItem)}>Save</button>
                     <button onClick={() => setEditing(false)}>Cancel</button>
