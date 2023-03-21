@@ -4,6 +4,7 @@ import Home from './Home';
 import Input from './Input';
 import ShoppingBag from './ShoppingBag';
 import Confirmation from './Confirmation';
+import './styles.css';
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -23,7 +24,6 @@ const App = () => {
         <Route path="/input" element={<Input onFormSubmit={handleFormSubmit} />} />
         <Route path="/shopping-bag" element={<ShoppingBag items={items} onCheckout={handleCheckout} />} />
         <Route path="/confirmation" element={<Confirmation onButtonClick={handleCheckout} />} />
-        <Route path="*" element={<div>Page not found</div>} />
       </Routes>
   </BrowserRouter>
 );
