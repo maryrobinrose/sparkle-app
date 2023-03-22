@@ -7,6 +7,26 @@
     animation-iteration-count: infinite;
     animation-direction: alternate, alternate;
   }
+
+  .star-medium {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    animation-name: moveStar, moveStarVertical;
+    animation-duration: 10s, 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, alternate;
+  }
+
+  .star-small {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    animation-name: moveStar, moveStarVertical;
+    animation-duration: 10s, 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, alternate;
+  }
   
   @keyframes moveStar {
     from {
