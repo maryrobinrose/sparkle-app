@@ -1,18 +1,24 @@
 /* styles.css */
 
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('./fonts/PressStart2P-Regular.ttf') format('truetype');
+  }
+
+.button-primary {
+    width: 260px;
+    height: 60px;
+    border: 7px solid black ;
     color: #fff;
-    background-color: #007bff;
+    background-color: #CB89FF;
+    font-family: 'PressStart2P-Regular';
+    font-size: 14px;
+    text-transform: lowercase;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
     transition: background-color 0.3s ease;
-  }
+}
   
-  button:hover {
-    background-color: #0062cc;
-  }
+.button-primary:hover {
+    background-color: #8F00FF;
+}
   

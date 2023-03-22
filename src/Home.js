@@ -15,7 +15,7 @@ const Home = () => {
       <Header />
       <h1>Sparkle App</h1>
       <p>Welcome to Sparkle App! The #1 place to order your dreams!</p>
-      <button onClick={handleButtonClick}>Order Now!</button>
+      <button className="button-primary" onClick={handleButtonClick}>Order Now!</button>
       <Footer />
     </div>
   );
