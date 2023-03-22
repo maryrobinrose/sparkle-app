@@ -1,0 +1,28 @@
+.star-large {
+    position: absolute;
+    width: 265px;
+    height: 265px;
+    animation-name: moveStar, moveStarVertical;
+    animation-duration: 10s, 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, alternate;
+  }
+  
+  @keyframes moveStar {
+    from {
+      left: 0;
+    }
+    to {
+      left: calc(100% - 265px);
+    }
+  }
+  
+  @keyframes moveStarVertical {
+    from {
+      top: 0;
+    }
+    to {
+      top: calc(100% - 265px);
+    }
+  }
+  

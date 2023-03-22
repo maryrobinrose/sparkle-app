@@ -1,8 +1,8 @@
 import React from 'react';
 import starLarge from './images/stars/star-large.svg';
-import './FloatingStar.css';
+import './stars.css';
 
-const FloatingStar = () => {
+const Stars = () => {
 
   return (
     <div>
@@ -11,4 +11,4 @@ const FloatingStar = () => {
   );
 };
 
-export default FloatingStar;
+export default Stars;

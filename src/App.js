@@ -6,6 +6,7 @@ import ShoppingBag from './ShoppingBag';
 import Confirmation from './Confirmation';
 import Header from './Header';
 import Footer from './Footer';
+import Stars from './Stars';
 import './styles.css';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+    <Stars />
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
