@@ -4,6 +4,7 @@ import Home from './Home';
 import Input from './Input';
 import ShoppingBag from './ShoppingBag';
 import Confirmation from './Confirmation';
+import FloatingStar from './FloatingStar';
 import './styles.css';
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+    <FloatingStar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/input" element={<Input onFormSubmit={handleFormSubmit} />} />
