@@ -68,14 +68,14 @@ const ShoppingBag = (props) => {
                       value={editedItemValue} 
                       onChange={(e) => setEditedItemValue(e.target.value)} 
                       />
-                    <button onClick={handleSave}>Save</button>
-                    <button onClick={() => setEditing(false)}>Cancel</button>
+                    <button className="button-save" alt="Save" onClick={handleSave}></button>
+                    <button className="button-delete-cancel" alt="Cancel"onClick={() => setEditing(false)}></button>
                   </>
                 ) : (
                   <>
+                    <button className="button-delete-cancel" alt="Delete" onClick={() => handleDelete(index)}></button>
+                    <button className="button-edit" alt="Edit" onClick={() => handleEdit(index)}></button>
                     {item}
-                    <button onClick={() => handleEdit(index)}>Edit</button>
-                    <button onClick={() => handleDelete(index)}>Delete</button>
                   </>
                 )}
               </li>
