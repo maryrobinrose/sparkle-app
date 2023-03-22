@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import { useNavigate } from 'react-router-dom';
@@ -14,6 +14,7 @@ const Input = (props) => {
     setCart([...cart, item]);
     setMessage(`Item "${item}" added to cart.`);
     setItem('');
+    setMessage(false);
   };
 
   const handleSubmit = (event) => {
@@ -30,17 +31,29 @@ const Input = (props) => {
     navigate('/shopping-bag');
   };
 
+  useEffect(() => {
+    const count = cart.length;
+    document.title = `Dream Shopping Bag (${count})`;
+  }, [cart]);
+
   return (
     <div>
       <Header />
       <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
       <h1>Enter your dream here:</h1>
       <form onSubmit={handleSubmit}>
-        <input className="input" type="text" placeholder="My dream job..." value={item} onChange={(e) => setItem(e.target.value)} />
-        <button className="button-primary" alt="Add to bag" type="submit">Add to bag</button>
+        <input 
+          className={`${message ? 'error-input' : 'input'}`}
+          type="text" 
+          placeholder="My dream job..." 
+          value={item} 
+          onChange={(e) => setItem(e.target.value)} 
+          onFocus={() => setMessage(false)}
+        />
+        {message && <div className="error-message">{message}</div>}
+        <button className="button-primary" alt="Add to bag" type="submit" onClick={() => setMessage(false)}>Add to bag</button>
       </form>
-      <p>{message}</p>
-      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
+      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length > 0 ? cart.length : 0}</button>
       <Footer />
     </div>
   );

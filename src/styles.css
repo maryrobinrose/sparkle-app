@@ -103,7 +103,21 @@ ul {
     width: 800px;
     height: 80px;
     border: 7px solid black;
+    outline: none;
 }
+
+.error-message {
+    color: #FF9900;
+}
+
+.error-input {
+    font-family: 'VT323-Regular';
+    font-size: 32px;
+    text-transform: lowercase;
+    width: 800px;
+    height: 80px;
+    border: 7px solid #FF9900;
+  }
 
 .footer {
     text-decoration: none;
