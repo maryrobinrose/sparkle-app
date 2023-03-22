@@ -4,10 +4,10 @@ import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
-  const [items, setItems] = useState([]); // create state variable for items
-  const [selectedItemIndex, setSelectedItemIndex] = useState(null); // create state variable for selected item index
-  const [editedItemValue, setEditedItemValue] = useState(''); // create state variable for edited item value
-  const [editing, setEditing] = useState(false); // create state variable for editing mode
+  const [items, setItems] = useState([]); 
+  const [selectedItemIndex, setSelectedItemIndex] = useState(null); 
+  const [editedItemValue, setEditedItemValue] = useState(''); 
+  const [editing, setEditing] = useState(false); 
   const navigate = useNavigate();
 
   useEffect(() => {
