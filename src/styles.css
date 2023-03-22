@@ -5,6 +5,11 @@
     src: url('./fonts/PressStart2P-Regular.ttf') format('truetype');
   }
 
+  @font-face {
+    font-family: 'VT323-Regular';
+    src: url('./fonts/VT323-Regular.ttf') format('truetype');
+  }
+
 .button-primary {
     width: 260px;
     height: 60px;
@@ -22,3 +27,26 @@
     background-color: #8F00FF;
 }
   
+.button-back {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-image: url("images/button-back.svg");
+    cursor: pointer;
+}
+
+.button-back:hover {
+    background-image: url("images/button-back-hover.svg");
+}
+
+.shopping-bag {
+    font-family: 'VT323-Regular';
+    font-size: 48px;
+    padding-top: 20px;
+    width: 50px;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    background-image: url("images/shopping-bag.svg");
+    cursor: pointer;
+}

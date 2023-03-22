@@ -52,7 +52,7 @@ const ShoppingBag = (props) => {
   return (
     <div>
       <Header />
-      <button onClick={handleBack}>Back</button>
+      <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
       <h1>Shopping Bag</h1>
       {items.length === 0 ? (
         <p>Your bag is empty</p>
@@ -82,7 +82,7 @@ const ShoppingBag = (props) => {
             ))}
           </ul>
           <p>Total: Good vibes</p>
-          <button onClick={handleCheckout}>Checkout</button>
+          <button className="button-primary" alt="Checkout" onClick={handleCheckout}>Checkout</button>
         </>
       )}
       <Footer />
