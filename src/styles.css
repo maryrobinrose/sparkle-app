@@ -10,10 +10,10 @@
     src: url('./fonts/VT323-Regular.ttf') format('truetype');
   }
 
-  body {
+body {
     font-family: 'VT323-Regular';
     text-transform: lowercase;
-  }
+}
 
 .button-primary {
     display: block;
@@ -103,4 +103,9 @@ ul {
     width: 800px;
     height: 80px;
     border: 7px solid black;
+}
+
+.footer {
+    text-decoration: none;
+    color: black;
 }
