@@ -12,7 +12,6 @@ const Input = (props) => {
 
   const handleAddToCart = () => {
     setCart([...cart, item]);
-    setMessage(`Item "${item}" added to cart.`);
     setItem('');
     setMessage(false);
   };
