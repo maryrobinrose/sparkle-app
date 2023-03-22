@@ -33,7 +33,7 @@ const Input = (props) => {
 
   useEffect(() => {
     const count = cart.length;
-    document.title = `Dream Shopping Bag (${count})`;
+    document.title = `shopping bag (${count})`;
   }, [cart]);
 
   return (
@@ -53,7 +53,7 @@ const Input = (props) => {
         {message && <div className="error-message">{message}</div>}
         <button className="button-primary" alt="Add to bag" type="submit" onClick={() => setMessage(false)}>Add to bag</button>
       </form>
-      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length > 0 ? cart.length : 0}</button>
+      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
       <Footer />
     </div>
   );
