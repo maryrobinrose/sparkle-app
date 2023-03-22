@@ -13,6 +13,7 @@
 body {
     font-family: 'VT323-Regular';
     text-transform: lowercase;
+    background-image: url("images/background.png");
 }
 
 .button-primary {
@@ -102,6 +103,16 @@ ul {
     text-transform: lowercase;
     width: 800px;
     height: 80px;
+    border: 7px solid black;
+    outline: none;
+}
+
+.edit-input {
+    font-family: 'VT323-Regular';
+    font-size: 32px;
+    text-transform: lowercase;
+    width: 400px;
+    height: 40px;
     border: 7px solid black;
     outline: none;
 }

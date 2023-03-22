@@ -49,6 +49,7 @@ const ShoppingBag = (props) => {
                   <>
                     <input 
                       type="text" 
+                      className="edit-input"
                       value={editedItemValue} 
                       onChange={(e) => setEditedItemValue(e.target.value)} 
                       />
