@@ -1,43 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
-  const [items, setItems] = useState([]); 
   const [selectedItemIndex, setSelectedItemIndex] = useState(null); 
   const [editedItemValue, setEditedItemValue] = useState(''); 
   const [editing, setEditing] = useState(false); 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setItems(props.items);
-  }, [props.items]);
-
   const handleCheckout = () => {
+    props.onCheckout();
     navigate('/confirmation');
   };
 
   const handleDelete = (index) => {
-    if (!editing) {
-      const newItems = [...items];
-      newItems.splice(index, 1);
-      setItems(newItems);
-    } else {
-      setEditing(false);
-    }
+    props.onDelete(index);
   };
 
   const handleEdit = (index) => {
     setSelectedItemIndex(index);
-    setEditedItemValue(items[index]);
+    setEditedItemValue(props.items[index]);
     setEditing(true);
   };
 
   const handleSave = () => {
-    const newItems = [...items];
+    const newItems = [...props.items];
     newItems[selectedItemIndex] = editedItemValue;
-    setItems(newItems);
+    props.onEdit(selectedItemIndex, editedItemValue);
     setSelectedItemIndex(null);
     setEditedItemValue('');
     setEditing(false);
@@ -48,12 +38,12 @@ const ShoppingBag = (props) => {
       <Header />
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
       <h1>Shopping Bag</h1>
-      {items.length === 0 ? (
+      {props.items.length === 0 ? (
         <p>Your bag is empty</p>
       ) : (
         <>
           <ul>
-            {items.map((item, index) => (
+            {props.items.map((item, index) => (
               <li key={index}>
                 {editing && selectedItemIndex === index ? (
                   <>

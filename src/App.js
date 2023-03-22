@@ -13,6 +13,18 @@ const App = () => {
     setItems([...items, item]);
   };
 
+  const handleDelete = (index) => {
+    const newItems = [...items];
+    newItems.splice(index, 1);
+    setItems(newItems);
+  };
+
+  const handleEdit = (index, updatedItem) => {
+    const newItems = [...items];
+    newItems[index] = updatedItem;
+    setItems(newItems);
+  };
+
   const handleCheckout = () => {
     setItems([]);
   };
@@ -22,11 +34,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/input" element={<Input onFormSubmit={handleFormSubmit} />} />
-        <Route path="/shopping-bag" element={<ShoppingBag items={items} onCheckout={handleCheckout} />} />
+        <Route path="/shopping-bag" element={<ShoppingBag items={items} onDelete={handleDelete} onEdit={handleEdit} onCheckout={handleCheckout} />} />
         <Route path="/confirmation" element={<Confirmation onButtonClick={handleCheckout} />} />
       </Routes>
-  </BrowserRouter>
-);
+    </BrowserRouter>
+  );
 };
 
 export default App;
