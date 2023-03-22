@@ -35,18 +35,12 @@ const ShoppingBag = (props) => {
   };
 
   const handleSave = () => {
-    console.log('save is clicked');
     const newItems = [...items];
     newItems[selectedItemIndex] = editedItemValue;
     setItems(newItems);
     setSelectedItemIndex(null);
     setEditedItemValue('');
     setEditing(false);
-  };
-
-  const handleBack = () => {
-    navigate('/input');
-    window.location.reload();
   };
 
   return (
