@@ -119,6 +119,11 @@ ul {
     border: 7px solid #FF9900;
   }
 
+.header {
+    text-decoration: none;
+    color: black;
+}
+
 .footer {
     text-decoration: none;
     color: black;
