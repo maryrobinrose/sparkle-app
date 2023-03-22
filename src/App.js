@@ -4,7 +4,8 @@ import Home from './Home';
 import Input from './Input';
 import ShoppingBag from './ShoppingBag';
 import Confirmation from './Confirmation';
-import FloatingStar from './FloatingStar';
+import Header from './Header';
+import Footer from './Footer';
 import './styles.css';
 
 const App = () => {
@@ -32,13 +33,14 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    <FloatingStar />
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/input" element={<Input onFormSubmit={handleFormSubmit} />} />
         <Route path="/shopping-bag" element={<ShoppingBag items={items} onDelete={handleDelete} onEdit={handleEdit} onCheckout={handleCheckout} />} />
         <Route path="/confirmation" element={<Confirmation onButtonClick={handleCheckout} />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

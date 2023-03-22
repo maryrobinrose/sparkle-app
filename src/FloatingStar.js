@@ -5,7 +5,7 @@ import './FloatingStar.css';
 const FloatingStar = () => {
 
   return (
-    <div >
+    <div>
       <img className="star-large" src={starLarge} alt="star-large" />
     </div>
   );

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
-import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const ShoppingBag = (props) => {
@@ -35,7 +33,6 @@ const ShoppingBag = (props) => {
 
   return (
     <div>
-      <Header />
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
       <h1>Shopping Bag</h1>
       {props.items.length === 0 ? (
@@ -70,7 +67,6 @@ const ShoppingBag = (props) => {
           <button className="button-primary" alt="Checkout" onClick={handleCheckout}>Checkout</button>
         </>
       )}
-      <Footer />
     </div>
   );
 };

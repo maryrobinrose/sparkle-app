@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Footer from './Footer';
-import Header from './Header';
 import { useNavigate } from 'react-router-dom';
 
 const Input = (props) => {
@@ -32,7 +30,6 @@ const Input = (props) => {
 
   return (
     <div>
-      <Header />
       <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
       <h1>Enter your dream here:</h1>
       <form onSubmit={handleSubmit}>
@@ -48,7 +45,6 @@ const Input = (props) => {
         <button className="button-primary" alt="Add to bag" type="submit" onClick={() => setMessage(false)}>Add to bag</button>
       </form>
       <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}></button>
-      <Footer />
     </div>
   );
 };
