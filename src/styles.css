@@ -16,6 +16,26 @@ body {
     background-image: url("images/background.png");
 }
 
+.main-message {
+    width: 1000px;
+    height: 600px;
+    background-color: #FFF3FC;
+    border: 7px solid black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+h1 {
+
+}
+
+p {
+    font-size: 48px;
+    text-align: center;
+}
+    
 .button-primary {
     display: block;
     width: 260px;
@@ -28,6 +48,10 @@ body {
     text-transform: lowercase;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
   
 .button-primary:hover {

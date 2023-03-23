@@ -9,9 +9,10 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="main-message">
       <h1>Sparkle App</h1>
-      <p>Welcome to Sparkle App! The #1 place to order your dreams!</p>
+      <p>Welcome to Sparkle App!</p>
+      <p>The #1 place to order your dreams!</p>
       <button className="button-primary" alt="Order now" onClick={handleButtonClick}>Order Now!</button>
     </div>
   );

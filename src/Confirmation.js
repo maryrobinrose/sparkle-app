@@ -10,7 +10,7 @@ const Confirmation = ({ onButtonClick }) => {
   };
 
   return (
-    <div>
+    <div className="main-message">
       <h1>Confirmation</h1>
       <span>Guaranteed Delivery!*</span>
       <p>Your dreams are on the way!</p>

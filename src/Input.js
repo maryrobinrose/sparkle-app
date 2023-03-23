@@ -29,7 +29,7 @@ const Input = (props) => {
   };
 
   return (
-    <div>
+    <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
       <h1>Enter your dream here:</h1>
       <form onSubmit={handleSubmit}>

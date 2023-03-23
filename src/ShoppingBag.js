@@ -32,7 +32,7 @@ const ShoppingBag = (props) => {
   };
 
   return (
-    <div>
+    <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
       <h1>Shopping Bag</h1>
       {props.items.length === 0 ? (
