@@ -39,7 +39,10 @@ const ShoppingBag = (props) => {
       <div className="horizonal-line"></div>
       <h1 className="main-message-title">Sparkle App</h1>
       {props.items.length === 0 ? (
-        <p>Your bag is empty</p>
+        <div>
+          <p className="empty-bag">Your bag is empty</p>
+          <button className="button-primary" alt="Order now" onClick={() => navigate('/input')}>Order Now!</button>
+        </div>
       ) : (
         <>
           <ul>

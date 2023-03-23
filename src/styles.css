@@ -270,3 +270,11 @@ ul {
     text-align: center;
     margin-top: 220px;
 }
+
+.empty-bag {
+    font-size: 36px;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+}
