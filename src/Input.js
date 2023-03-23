@@ -32,12 +32,14 @@ const Input = (props) => {
     <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
       <div className="pink-title"></div>
+      <div className="vertical-line"></div>
       <div className="horizonal-line"></div>
       <h1 className="main-message-title">Sparkle App</h1>
-      <h1>Enter your dream here:</h1>
+      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
+      <p className="enter-dream">Enter your dream here:</p>
       <form onSubmit={handleSubmit}>
         <input 
-          className={`${message ? 'error-input' : 'input'}`}
+          className={`${message ? 'error-input' : 'main-input'}`}
           type="text" 
           placeholder="My dream job..." 
           value={item} 
@@ -47,7 +49,6 @@ const Input = (props) => {
         {message && <div className="error-message">{message}</div>}
         <button className="button-primary" alt="Add to bag" type="submit" onClick={() => setMessage(false)}>Add to bag</button>
       </form>
-      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
     </div>
   );
 };

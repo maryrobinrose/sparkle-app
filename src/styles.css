@@ -44,6 +44,12 @@ body {
     text-align: center;
 }
 
+.enter-dream {
+    font-size: 32px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
 .green-square {
     width: 50px;
     height: 50px;
@@ -89,16 +95,28 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.button-shopping-bag {
+    font-family: 'VT323-Regular';
+    font-size: 48px;
+    padding-top: 20px;
+    width: 50px;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+    background-image: url("images/shopping-bag.svg");
+    cursor: pointer;
+    margin-left: 900px;
+    margin-top: 30px;
+}
   
 .button-primary:hover {
     background-color: #8F00FF;
 }
   
 .button-back {
-    width: 64px;
-    height: 64px;
-    margin-left: -4px;
-    margin-top: -4px;
+    width: 50px;
+    height: 50px;
     border: none;
     background-image: url("images/button-back.svg");
     cursor: pointer;
@@ -140,17 +158,6 @@ body {
     margin-bottom: 20px;
 }
 
-.button-shopping-bag {
-    font-family: 'VT323-Regular';
-    font-size: 48px;
-    padding-top: 20px;
-    width: 50px;
-    height: 80px;
-    border: none;
-    background-color: transparent;
-    background-image: url("images/shopping-bag.svg");
-    cursor: pointer;
-}
 
 ul {
     list-style-image: url("images/heart.svg");;
@@ -160,7 +167,7 @@ ul {
   }
   
 
-.input{
+.main-input{
     font-family: 'VT323-Regular';
     font-size: 32px;
     text-transform: lowercase;
@@ -168,6 +175,7 @@ ul {
     height: 80px;
     border: 7px solid black;
     outline: none;
+    margin-left: 40px;
 }
 
 .edit-input {
@@ -182,6 +190,9 @@ ul {
 
 .error-message {
     color: #FF9900;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 24px;
 }
 
 .error-input {
@@ -191,7 +202,8 @@ ul {
     width: 800px;
     height: 80px;
     border: 7px solid #FF9900;
-  }
+    margin-left: 40px;
+}
 
 .header {
     text-decoration: none;
