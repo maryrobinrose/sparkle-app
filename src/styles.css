@@ -52,7 +52,7 @@ body {
 
 .total {
     font-size: 36px;
-    margin-left: 60px;
+    margin-left: 150px;
     margin-top: 50px;
 }
 
@@ -133,16 +133,6 @@ body {
     background-image: url("images/button-back-hover.svg");
 }
 
-.button-edit {
-    display: block;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    background-image: url("images/button-edit.svg");
-    cursor: pointer;
-}
-
 .button-save {
     display: block;
     width: 20px;
@@ -161,7 +151,20 @@ body {
     background-color: transparent;
     background-image: url("images/button-delete-cancel.svg");
     cursor: pointer;
+    margin-left: -120px;
     margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.button-edit {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-image: url("images/button-edit.svg");
+    cursor: pointer;
+    margin-left: -120px;
 }
 
 
@@ -169,7 +172,7 @@ ul {
     list-style-image: url("images/heart.svg");;
     width: 30px;
     height: 60px;
-    margin: 100px;
+    margin: 150px;
   }
   
 
@@ -277,4 +280,10 @@ ul {
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
+}
+
+.item-name {
+    font-size: 36px;
+    margin-top: -105px;
+    margin-left: 40px;
 }

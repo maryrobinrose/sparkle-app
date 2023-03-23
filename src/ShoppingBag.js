@@ -47,9 +47,9 @@ const ShoppingBag = (props) => {
         <>
           <ul>
             {props.items.map((item, index) => (
-              <li key={index}>
+              <li>
                 {editing && selectedItemIndex === index ? (
-                  <>
+                  <div>
                     <input 
                       type="text" 
                       className="edit-input"
@@ -58,13 +58,13 @@ const ShoppingBag = (props) => {
                       />
                     <button className="button-save" alt="Save" onClick={handleSave}></button>
                     <button className="button-delete-cancel" alt="Cancel"onClick={() => setEditing(false)}></button>
-                  </>
+                  </div>
                 ) : (
-                  <>
+                  <div>
                     <button className="button-delete-cancel" alt="Delete" onClick={() => handleDelete(index)}></button>
                     <button className="button-edit" alt="Edit" onClick={() => handleEdit(index)}></button>
-                    {item}
-                  </>
+                    <div className="item-name">{item}</div>
+                  </div>
                 )}
               </li>
             ))}
