@@ -2,31 +2,31 @@
     position: absolute;
     width: 265px;
     height: 265px;
-    animation-name: moveStar, moveStarVertical;
-    animation-duration: 10s, 5s;
+    animation-name: moveStar, moveStarVertical, moveStarDiagonal;
+    animation-duration: 20s, 10s, 15s;
     animation-iteration-count: infinite;
-    animation-direction: alternate, alternate;
+    animation-direction: normal, alternate, reverse;
   }
-
-  .star-medium {
+  
+.star-medium {
     position: absolute;
     width: 210px;
     height: 210px;
-    animation-name: moveStar, moveStarVertical;
-    animation-duration: 10s, 5s;
+    animation-name: moveStar, moveStarDiagonal, moveStarRotate;
+    animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate, alternate;
-  }
+    animation-direction: normal, reverse, alternate;
+}
 
-  .star-small {
+.star-small {
     position: absolute;
     width: 160px;
     height: 160px;
-    animation-name: moveStar, moveStarVertical;
-    animation-duration: 10s, 5s;
+    animation-name: moveStar, moveStarVertical, moveStarBounce;
+    animation-duration: 10s, 15s, 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate, alternate;
-  }
+    animation-direction: alternate, normal, alternate-reverse;
+}
   
   @keyframes moveStar {
     from {
@@ -43,6 +43,35 @@
     }
     to {
       top: calc(100% - 265px);
+    }
+  }
+  
+  @keyframes moveStarDiagonal {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to {
+      left: calc(100% - 265px);
+      top: calc(100% - 265px);
+    }
+  }
+  
+  @keyframes moveStarRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes moveStarBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
     }
   }
   
