@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './ShoppingBag.css';
 
 const ShoppingBag = (props) => {
   const [selectedItemIndex, setSelectedItemIndex] = useState(null); 
@@ -52,11 +53,18 @@ const ShoppingBag = (props) => {
                   <div>
                     <input 
                       type="text" 
-                      className="edit-input"
+                      className={`edit-input ${editedItemValue.trim() === '' ? 'edit-error-input' : ''}`}
                       value={editedItemValue} 
                       onChange={(e) => setEditedItemValue(e.target.value)} 
-                      />
-                    <button className="button-save" alt="Save" onClick={handleSave}></button>
+                    />
+                    {editedItemValue.trim() === '' && <div className="edit-error-message">Please enter a dream</div>}
+                    <button 
+                      className="button-save" 
+                      alt="Save" 
+                      onClick={handleSave}
+                      disabled={editedItemValue.trim() === ''}
+                    >
+                    </button>
                     <button className="button-delete-cancel" alt="Cancel"onClick={() => setEditing(false)}></button>
                   </div>
                 ) : (

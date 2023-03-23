@@ -187,16 +187,6 @@ ul {
     margin-left: 40px;
 }
 
-.edit-input {
-    font-family: 'VT323-Regular';
-    font-size: 32px;
-    text-transform: lowercase;
-    width: 400px;
-    height: 40px;
-    border: 7px solid black;
-    outline: none;
-}
-
 .error-message {
     color: #FF9900;
     margin-left: 50px;
