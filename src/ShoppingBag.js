@@ -52,12 +52,17 @@ const ShoppingBag = (props) => {
                 {editing && selectedItemIndex === index ? (
                   <div>
                     <input 
-                      type="text" 
-                      placeholder="My dream job..." 
-                      className={`edit-input ${editedItemValue.trim() === '' ? 'edit-error-input' : ''}`}
-                      value={editedItemValue} 
-                      onChange={(e) => setEditedItemValue(e.target.value)} 
-                    />
+                        type="text" 
+                        placeholder="My dream job..." 
+                        className={`edit-input ${editedItemValue.trim() === '' ? 'edit-error-input' : ''}`}
+                        value={editedItemValue} 
+                        onChange={(e) => setEditedItemValue(e.target.value)} 
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' && editedItemValue.trim() !== '') {
+                            handleSave();
+                          }
+                        }}
+                      />
                     {editedItemValue.trim() === '' && <div className="edit-error-message">Please enter a dream</div>}
                     <button 
                       className="button-save" 
