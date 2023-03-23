@@ -44,7 +44,7 @@ const Input = (props) => {
         {message && <div className="error-message">{message}</div>}
         <button className="button-primary" alt="Add to bag" type="submit" onClick={() => setMessage(false)}>Add to bag</button>
       </form>
-      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}></button>
+      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
     </div>
   );
 };
