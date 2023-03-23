@@ -75,14 +75,16 @@ ul {
     border: 7px solid black;
     outline: none;
     position: absolute;
+    margin-left: 30px;
 }
 
 .edit-error-message {
     color: #FF9900;
     width: 400px;
-    margin-left: 50px;
-    margin-top: 5px;
+    margin-left: 40px;
+    margin-top: 60px;
     font-size: 20px;
+    position: absolute;
 }
 
 .edit-error-input {
@@ -91,5 +93,8 @@ ul {
     width: 400px;
     height: 40px;
     border: 7px solid #FF9900;
-    margin-left: 40px;
+    font-size: 32px;
+    outline: none;
+    margin-left: 30px;
+    position: absolute;
 }
