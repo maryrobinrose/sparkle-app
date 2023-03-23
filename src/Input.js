@@ -14,7 +14,6 @@ const Input = (props) => {
       setMessage('');
   };
   
-
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!item) {
@@ -26,7 +25,6 @@ const Input = (props) => {
       handleAddToCart();
     }
   };
-  
 
   const handleGoToCart = () => {
     navigate('/shopping-bag');
