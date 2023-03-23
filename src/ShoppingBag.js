@@ -34,7 +34,10 @@ const ShoppingBag = (props) => {
   return (
     <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
-      <h1>Shopping Bag</h1>
+      <div className="pink-title"></div>
+      <div className="vertical-line"></div>
+      <div className="horizonal-line"></div>
+      <h1 className="main-message-title">Sparkle App</h1>
       {props.items.length === 0 ? (
         <p>Your bag is empty</p>
       ) : (
@@ -63,7 +66,7 @@ const ShoppingBag = (props) => {
               </li>
             ))}
           </ul>
-          <p>Total: Good vibes</p>
+          <p className="total">Total: Good vibes</p>
           <button className="button-primary" alt="Checkout" onClick={handleCheckout}>Checkout</button>
         </>
       )}
