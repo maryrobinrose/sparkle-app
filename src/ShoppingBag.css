@@ -17,11 +17,8 @@ ul {
   .total {
     position: fixed;
     font-size: 36px;
-    margin-left: 100px;
     top: 60%;
-
   }
-  
 
   li > div {
     position: relative;
@@ -76,6 +73,7 @@ ul {
     height: 40px;
     border: 7px solid black;
     outline: none;
+    position: absolute;
 }
 
 .edit-error-message {
