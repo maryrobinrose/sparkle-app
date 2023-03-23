@@ -133,16 +133,6 @@ body {
     background-image: url("images/button-back-hover.svg");
 }
 
-.button-save {
-    display: block;
-    width: 20px;
-    height: 16px;
-    border: none;
-    background-color: transparent;
-    background-image: url("images/button-save.svg");
-    cursor: pointer;
-}
-
 .button-delete-cancel {
     display: block;
     width: 20px;

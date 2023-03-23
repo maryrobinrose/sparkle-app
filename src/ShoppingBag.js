@@ -62,8 +62,7 @@ const ShoppingBag = (props) => {
                       className="button-save" 
                       alt="Save" 
                       onClick={handleSave}
-                      disabled={editedItemValue.trim() === ''}
-                    >
+                      disabled={editedItemValue.trim() === ''}>
                     </button>
                     <button className="button-delete-cancel" alt="Cancel"onClick={() => setEditing(false)}></button>
                   </div>

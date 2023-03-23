@@ -46,6 +46,17 @@ ul {
     top: 10px;
   }
 
+  .button-save {
+    width: 20px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    background-image: url("images/button-save.svg");
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+  }
+
 .item-name {
     font-size: 36px;
 }
