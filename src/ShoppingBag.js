@@ -53,6 +53,7 @@ const ShoppingBag = (props) => {
                   <div>
                     <input 
                       type="text" 
+                      placeholder="My dream job..." 
                       className={`edit-input ${editedItemValue.trim() === '' ? 'edit-error-input' : ''}`}
                       value={editedItemValue} 
                       onChange={(e) => setEditedItemValue(e.target.value)} 

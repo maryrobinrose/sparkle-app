@@ -64,6 +64,7 @@ ul {
     width: 400px;
     position: absolute;
     top: 110px;
+    margin-left: 20px !important;
 }
 
 .edit-input {
@@ -76,12 +77,13 @@ ul {
     outline: none;
     position: absolute;
     margin-left: 30px;
+    padding-left: 10px;
 }
 
 .edit-error-message {
     color: #FF9900;
     width: 400px;
-    margin-left: 40px;
+    margin-left: 45px;
     margin-top: 60px;
     font-size: 20px;
     position: absolute;

@@ -175,11 +175,12 @@ ul {
     border: 7px solid black;
     outline: none;
     margin-left: 40px;
+    padding-left: 20px;
 }
 
 .error-message {
     color: #FF9900;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-top: 10px;
     font-size: 24px;
 }
@@ -192,6 +193,7 @@ ul {
     height: 80px;
     border: 7px solid #FF9900;
     margin-left: 40px;
+    padding-left: 20px;
 }
 
 .header {
