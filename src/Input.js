@@ -9,20 +9,24 @@ const Input = (props) => {
   const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    setCart([...cart, item]);
-    setItem('');
-    setMessage(false);
+      setCart([...cart, item]);
+      setItem('');
+      setMessage('');
   };
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!item) {
       setMessage('Please enter a dream');
+    } else if (cart.length === 3) {
+      setMessage("You've reached the 3 dream limit!");
     } else {
       onFormSubmit(item);
       handleAddToCart();
     }
   };
+  
 
   const handleGoToCart = () => {
     navigate('/shopping-bag');
