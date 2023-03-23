@@ -29,13 +29,14 @@ body {
 
 .main-message-title {
     margin-top: -50px;
-    margin-left: 60px;
+    margin-left:70px;
+    color: white;
 }
 
 .greeting-one {
     font-size: 48px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .greeting-two {
@@ -101,6 +102,7 @@ body {
     border: none;
     background-image: url("images/button-back.svg");
     cursor: pointer;
+    display: block;
 }
 
 .button-back:hover {
@@ -198,7 +200,7 @@ ul {
 
 .footer {
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;

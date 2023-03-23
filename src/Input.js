@@ -31,6 +31,9 @@ const Input = (props) => {
   return (
     <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
+      <div className="pink-title"></div>
+      <div className="horizonal-line"></div>
+      <h1 className="main-message-title">Sparkle App</h1>
       <h1>Enter your dream here:</h1>
       <form onSubmit={handleSubmit}>
         <input 
