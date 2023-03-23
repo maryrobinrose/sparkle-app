@@ -12,7 +12,7 @@ const Confirmation = ({ onButtonClick }) => {
 
   return (
     <div className="main-message">
-       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
+      <div className="green-square"></div>
       <div className="pink-title"></div>
       <div className="vertical-line"></div>
       <div className="horizonal-line"></div>
