@@ -196,11 +196,6 @@ ul {
     outline: none;
 }
 
-.header {
-    text-decoration: none;
-    color: black;
-}
-
 .footer {
     position: fixed;
     bottom: 20px;
