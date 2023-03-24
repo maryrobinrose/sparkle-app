@@ -1,4 +1,4 @@
-/* styles.css */
+/* App.css */
 
 @font-face {
     font-family: 'PressStart2P-Regular';
@@ -227,34 +227,8 @@ ul {
       transform: translate(0, 0);
     }
   }
-
-  .image-container {
-    position: relative;
-    margin-left: 750px;
-    margin-top: -260px;
-  }
   
-  .delivery-text {
-    font-family: 'PressStart2P-Regular';
-    position: absolute;
-    top: 110px;
-    left: 20px;
-    transform: rotate(25deg);
-  }
 
-  .asterisk {
-    font-size: 20px;
-    position: fixed;
-    bottom: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .confirmation {
-    font-size: 48px;
-    text-align: center;
-    margin-top: 220px;
-}
 
 .empty-bag {
     font-size: 36px;

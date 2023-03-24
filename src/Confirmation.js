@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import starMedium from './images/stars/star-medium.svg';
+import './Confirmation.css'
 
 const Confirmation = ({ onButtonClick }) => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Confirmation = ({ onButtonClick }) => {
       <div className="horizonal-line"></div>
       <h1 className="main-message-title">Sparkle App</h1>
       <p className="confirmation">Your dreams are on the way!</p>
-      <div class="image-container">
+      <div className="star-container">
         <img src={starMedium} alt="star-medium" />
         <span class="delivery-text">Guaranteed Delivery!*</span>
       </div>

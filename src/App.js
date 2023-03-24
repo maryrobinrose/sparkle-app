@@ -7,7 +7,7 @@ import Confirmation from './Confirmation';
 import Header from './Header';
 import Footer from './Footer';
 import Stars from './Stars';
-import './styles.css';
+import './App.css';
 
 const App = () => {
   const [items, setItems] = useState([]);
