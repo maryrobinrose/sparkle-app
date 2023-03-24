@@ -32,6 +32,9 @@ const ShoppingBag = (props) => {
     setEditing(false);
   };
 
+  const isSingleItem = props.items.length === 1;
+  const isTwoItems = props.items.length === 2;
+
   return (
     <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
@@ -46,7 +49,7 @@ const ShoppingBag = (props) => {
         </div>
       ) : (
         <>
-          <ul>
+         <ul className={isSingleItem ? 'single-item' : isTwoItems ? 'two-items' : ''}>
             {props.items.map((item, index) => (
               <li>
                 {editing && selectedItemIndex === index ? (
