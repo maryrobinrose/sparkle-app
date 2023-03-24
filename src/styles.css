@@ -194,6 +194,7 @@ ul {
     border: 7px solid #FF9900;
     margin-left: 40px;
     padding-left: 20px;
+    outline: none;
 }
 
 .header {
