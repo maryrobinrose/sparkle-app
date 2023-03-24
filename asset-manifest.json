@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/sparkle-app/static/css/main.c3d1260b.css",
-    "main.js": "/sparkle-app/static/js/main.741ed290.js",
+    "main.css": "/sparkle-app/static/css/main.7c359b01.css",
+    "main.js": "/sparkle-app/static/js/main.50682a9e.js",
+    "static/media/background.png": "/sparkle-app/static/media/background.e6aeb48e0e6276ef34af.png",
     "static/media/VT323-Regular.ttf": "/sparkle-app/static/media/VT323-Regular.2bc43ad8eb2f60b39f27.ttf",
     "static/media/PressStart2P-Regular.ttf": "/sparkle-app/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
+    "static/media/star-small.svg": "/sparkle-app/static/media/star-small.cab6060ec85caf917d2c120b66e5e943.svg",
+    "static/media/star-medium.svg": "/sparkle-app/static/media/star-medium.20c552a6c6eff04f1869987852561998.svg",
+    "static/media/star-large.svg": "/sparkle-app/static/media/star-large.51d7b78c28388d80658c3c023daea2f8.svg",
     "static/media/heart.svg": "/sparkle-app/static/media/heart.64e1f0baeb4a14d539b1.svg",
     "static/media/button-edit.svg": "/sparkle-app/static/media/button-edit.04bfac496fd4caf50687.svg",
     "static/media/button-delete-cancel.svg": "/sparkle-app/static/media/button-delete-cancel.4e2148a89f067e73063d.svg",
     "index.html": "/sparkle-app/index.html",
-    "static/media/button-back-hover.svg": "/sparkle-app/static/media/button-back-hover.a83b5757d40384ba3f68.svg",
-    "static/media/button-back.svg": "/sparkle-app/static/media/button-back.483c8402353440ce02ea.svg",
     "static/media/shopping-bag.svg": "/sparkle-app/static/media/shopping-bag.760997fa84ef9200599f.svg",
+    "static/media/button-back-hover.svg": "/sparkle-app/static/media/button-back-hover.e443fc8d6670f842c52c.svg",
+    "static/media/button-back.svg": "/sparkle-app/static/media/button-back.2002bddbafd736db824d.svg",
     "static/media/button-save.svg": "/sparkle-app/static/media/button-save.61477a43fd3be128ef73.svg",
-    "main.c3d1260b.css.map": "/sparkle-app/static/css/main.c3d1260b.css.map",
-    "main.741ed290.js.map": "/sparkle-app/static/js/main.741ed290.js.map"
+    "main.7c359b01.css.map": "/sparkle-app/static/css/main.7c359b01.css.map",
+    "main.50682a9e.js.map": "/sparkle-app/static/js/main.50682a9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3d1260b.css",
-    "static/js/main.741ed290.js"
+    "static/css/main.7c359b01.css",
+    "static/js/main.50682a9e.js"
   ]
 }
