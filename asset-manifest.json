@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sparkle-app/static/css/main.7c359b01.css",
-    "main.js": "/sparkle-app/static/js/main.50682a9e.js",
+    "main.js": "/sparkle-app/static/js/main.6a52afdb.js",
     "static/media/background.png": "/sparkle-app/static/media/background.e6aeb48e0e6276ef34af.png",
     "static/media/VT323-Regular.ttf": "/sparkle-app/static/media/VT323-Regular.2bc43ad8eb2f60b39f27.ttf",
     "static/media/PressStart2P-Regular.ttf": "/sparkle-app/static/media/PressStart2P-Regular.21503c6a5385ab41dde9.ttf",
@@ -17,10 +17,10 @@
     "static/media/button-back.svg": "/sparkle-app/static/media/button-back.2002bddbafd736db824d.svg",
     "static/media/button-save.svg": "/sparkle-app/static/media/button-save.61477a43fd3be128ef73.svg",
     "main.7c359b01.css.map": "/sparkle-app/static/css/main.7c359b01.css.map",
-    "main.50682a9e.js.map": "/sparkle-app/static/js/main.50682a9e.js.map"
+    "main.6a52afdb.js.map": "/sparkle-app/static/js/main.6a52afdb.js.map"
   },
   "entrypoints": [
     "static/css/main.7c359b01.css",
-    "static/js/main.50682a9e.js"
+    "static/js/main.6a52afdb.js"
   ]
 }
