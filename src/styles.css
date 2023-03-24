@@ -95,7 +95,6 @@ body {
     font-size: 14px;
     text-transform: lowercase;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     position: absolute;
     top: 85%;
     left: 50%;
