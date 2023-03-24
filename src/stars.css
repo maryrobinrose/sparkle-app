@@ -27,7 +27,10 @@ html {
     position: absolute;
     width: 160px;
     height: 160px;
-    animation: moveStarLarge 3s linear infinite;
+    animation-name: moveStarSmall;
+    animation-duration: 15s, 20s, 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal, alternate, reverse;
 }
   
 @keyframes moveStarLarge {
@@ -56,8 +59,21 @@ html {
   }
 }
 
+@keyframes moveStarSmall {
+  from {
+    right: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  to {
+    right: calc(100% - 265px);
+    bottom: calc(100% - 265px);
+    transform: rotate(45deg);
+  }
+}
+
   
-  @keyframes moveStarDiagonal {
+  /* @keyframes moveStarDiagonal {
     from {
       left: 0;
       top: 0;
@@ -85,4 +101,4 @@ html {
       transform: translateY(-50px);
     }
   }
-  
+   */
