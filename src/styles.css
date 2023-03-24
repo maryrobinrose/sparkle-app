@@ -238,9 +238,9 @@ ul {
   .delivery-text {
     font-family: 'PressStart2P-Regular';
     position: absolute;
-    top: 120px;
+    top: 110px;
     left: 20px;
-    transform: rotate(35deg);
+    transform: rotate(25deg);
   }
 
   .asterisk {

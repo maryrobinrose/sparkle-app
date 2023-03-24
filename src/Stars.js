@@ -11,6 +11,9 @@ const Stars = () => {
       <img className="star-large" src={starLarge} alt="star-large" />
       <img className="star-medium" src={starMedium} alt="star-medium" />
       <img className="star-small" src={starSmall} alt="star-small" />
+      <img className="star-large-2" src={starLarge} alt="star-large" />
+      <img className="star-medium-2" src={starMedium} alt="star-medium" />
+      <img className="star-small-2" src={starSmall} alt="star-small" />
     </div>
   );
 };

@@ -10,7 +10,6 @@ html {
     animation-name: moveStarLarge;
     animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
-    animation-direction: normal, alternate, reverse;
   }
   
 .star-medium {
@@ -20,7 +19,6 @@ html {
     animation-name: moveStarMedium;
     animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
-    animation-direction: normal, alternate, reverse;
 }
 
 .star-small {
@@ -30,7 +28,39 @@ html {
     animation-name: moveStarSmall;
     animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
-    animation-direction: normal, alternate, reverse;
+}
+
+.star-large-2 {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: 200px;
+  width: 265px;
+  height: 265px;
+  animation-name: moveStarBounce, moveStarRotate;
+  animation-duration: 15s, 20s, 10s;
+  animation-iteration-count: infinite;
+}
+
+.star-medium-2 {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 600px;
+  width: 210px;
+  height: 210px;
+  animation-name: moveStarBounce, moveStarRotate;
+  animation-duration: 15s, 20s, 10s;
+  animation-iteration-count: infinite;
+}
+
+.star-small-2 {
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 10px;
+  width: 160px;
+  height: 160px;
+  animation-name: moveStarBounce, moveStarRotate;
+  animation-duration: 15s, 20s, 10s;
+  animation-iteration-count: infinite;
 }
   
 @keyframes moveStarLarge {
@@ -72,33 +102,20 @@ html {
   }
 }
 
-  
-  /* @keyframes moveStarDiagonal {
-    from {
-      left: 0;
-      top: 0;
-    }
-    to {
-      left: calc(100% - 265px);
-      top: calc(100% - 265px);
-    }
+@keyframes moveStarRotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @keyframes moveStarRotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
   
-  @keyframes moveStarBounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-50px);
-    }
+@keyframes moveStarBounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-   */
+  50% {
+    transform: translateY(-100px);
+  }
+}
