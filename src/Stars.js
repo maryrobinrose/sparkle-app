@@ -9,8 +9,8 @@ const Stars = () => {
   return (
     <div>
       <img className="star-large" src={starLarge} alt="star-large" />
-      {/* <img className="star-medium" src={starMedium} alt="star-medium" />
-      <img className="star-small" src={starSmall} alt="star-small" /> */}
+      <img className="star-medium" src={starMedium} alt="star-medium" />
+      {/* <img className="star-small" src={starSmall} alt="star-small" /> */}
     </div>
   );
 };
