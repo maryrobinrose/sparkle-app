@@ -1,9 +1,14 @@
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .star-large {
     position: absolute;
     width: 265px;
     height: 265px;
-    animation-name: moveStar, moveStarVertical, moveStarDiagonal;
-    animation-duration: 20s, 10s, 15s;
+    animation-name: moveStarLarge;
+    animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
     animation-direction: normal, alternate, reverse;
   }
@@ -12,7 +17,7 @@
     position: absolute;
     width: 210px;
     height: 210px;
-    animation-name: moveStar, moveStarDiagonal, moveStarRotate;
+    animation-name: moveStarVertical;
     animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
     animation-direction: normal, reverse, alternate;
@@ -22,20 +27,21 @@
     position: absolute;
     width: 160px;
     height: 160px;
-    animation-name: moveStar, moveStarVertical, moveStarBounce;
-    animation-duration: 10s, 15s, 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate, normal, alternate-reverse;
+    animation: moveStarLarge 3s linear infinite;
 }
   
-  @keyframes moveStar {
-    from {
-      left: 0;
-    }
-    to {
-      left: calc(100% - 265px);
-    }
+@keyframes moveStarLarge {
+  from {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
   }
+  to {
+    left: calc(100% - 265px);
+    top: calc(100% - 265px);
+    transform: rotate(45deg);
+  }
+}
   
   @keyframes moveStarVertical {
     from {
