@@ -35,6 +35,9 @@ const ShoppingBag = (props) => {
   const isSingleItem = props.items.length === 1;
   const isTwoItems = props.items.length === 2;
 
+  // Limit the items to three
+  const limitedItems = props.items.slice(0, 3);
+
   return (
     <div className="main-message">
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
@@ -50,7 +53,7 @@ const ShoppingBag = (props) => {
       ) : (
         <>
          <ul className={isSingleItem ? 'single-item' : isTwoItems ? 'two-items' : ''}>
-            {props.items.map((item, index) => (
+            {limitedItems.map((item, index) => (
               <li>
                 {editing && selectedItemIndex === index ? (
                   <div>
