@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Input from './Input';
 import ShoppingBag from './ShoppingBag';
@@ -33,7 +33,7 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Stars />
     <Header />
       <Routes>
@@ -43,7 +43,7 @@ const App = () => {
         <Route path="/confirmation" element={<Confirmation onButtonClick={handleCheckout} />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
