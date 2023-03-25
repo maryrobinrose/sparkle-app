@@ -8,6 +8,7 @@ import Input from './Input';
 import ShoppingBag from './ShoppingBag';
 import Stars from './Stars';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -35,7 +36,9 @@ const App = () => {
   return (
     <HashRouter>
     <Stars />
-    <Header />
+    <Link to="/">
+      <Header />
+    </Link>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/input" element={<Input onFormSubmit={handleFormSubmit} />} />
