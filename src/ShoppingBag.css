@@ -11,60 +11,70 @@
 ul {
     width: 30px;
     height: 60px;
-    list-style-image: url("images/heart.svg");
-  }
-
-.total {
-      position: fixed;
-      top: 60%;
-      font-size: 36px;
-  }
+    margin: 150px;
+    list-style-image: url("images/heart.svg");;
+}
 
 li > div {
-      position: relative;
-      margin-bottom: -100px;
-  }
-  
-.button-delete-cancel {
-      position: absolute;
-      top: -75px;
-      width: 20px;
-      height: 20px;
-      background-color: transparent;
-      background-image: url("images/button-delete-cancel.svg");
-      cursor: pointer;
-      border: none;
-  }
-  
-.button-edit {
-      position: absolute;
-      top: 40px;
-      width: 24px;
-      height: 24px;
-      background-color: transparent;
-      background-image: url("images/button-edit.svg");
-      cursor: pointer;
-      border: none;
-  }
-
-.button-save {
-      position: absolute;
-      top: 40px;
-      left: -120px;
-      width: 20px;
-      height: 16px;
-      background-color: transparent;
-      background-image: url("images/button-save.svg");
-      cursor: pointer;
-      border: none;
-  }
+    position: relative;
+    margin-bottom: -100px;
+}
 
 .item-name {
     position: absolute;
     top: 110px;
     width: 400px;
+    margin-top: -105px;
     margin-left: 20px !important;
     font-size: 36px;
+}
+
+.single-item {
+    margin-top: 300px;
+}
+
+.two-items {
+    margin-top: 200px;
+}
+
+.button-delete-cancel {
+    display: block;
+    position: absolute;
+    top: -75px;
+    width: 20px;
+    height: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: -120px;
+    background-color: transparent;
+    background-image: url("images/button-delete-cancel.svg");
+    cursor: pointer;
+    border: none;
+}
+
+.button-edit {
+    display: block;
+    position: absolute;
+    top: 40px;
+    width: 24px;
+    height: 24px;
+    margin-left: -120px;
+    background-color: transparent;
+    background-image: url("images/button-edit.svg");
+    cursor: pointer;
+    border: none;
+}
+
+.button-save {
+    position: absolute;
+    top: 40px;
+    left: -120px;
+    width: 20px;
+    height: 16px;
+    background-color: transparent;
+    background-image: url("images/button-save.svg");
+    cursor: pointer;
+    border: none;
 }
 
 .edit-input {
@@ -80,15 +90,6 @@ li > div {
     text-transform: lowercase;
 }
 
-.edit-error-message {
-    position: absolute;
-    width: 400px;
-    margin-top: 60px;
-    margin-left: 45px;
-    font-size: 20px;
-    color: #FF9900;
-}
-
 .edit-error-input {
     outline: none;
     position: absolute;
@@ -99,4 +100,19 @@ li > div {
     font-size: 32px;
     font-family: 'VT323-Regular';
     text-transform: lowercase;
+}
+
+.edit-error-message {
+    position: absolute;
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 45px;
+    font-size: 20px;
+    color: #FF9900;
+}
+
+.total {
+    position: fixed;
+    top: 60%;
+    font-size: 36px;
 }

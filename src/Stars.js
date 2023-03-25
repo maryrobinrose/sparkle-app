@@ -2,7 +2,7 @@ import React from 'react';
 import starLarge from './images/stars/star-large.svg';
 import starMedium from './images/stars/star-medium.svg';
 import starSmall from './images/stars/star-small.svg';
-import './stars.css';
+import './Stars.css';
 
 const Stars = () => {
 

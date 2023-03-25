@@ -1,0 +1,27 @@
+/* Input.css */
+
+.button-shopping-bag {
+    width: 50px;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 900px;
+    padding-top: 20px;
+    background-color: transparent;
+    background-image: url("images/heart-bag.svg");
+    cursor: pointer;
+    border: none;
+    font-size: 48px;
+    font-family: 'VT323-Regular';
+}
+
+.main-input {
+    outline: none;
+    width: 800px;
+    height: 80px;
+    margin-left: 40px;
+    padding-left: 20px;
+    border: 7px solid black;
+    font-size: 32px;
+    font-family: 'VT323-Regular';
+    text-transform: lowercase;
+}

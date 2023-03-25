@@ -1,3 +1,5 @@
+/* Stars.css */
+
 html {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -69,7 +71,7 @@ html {
     top: 0;
     transform: rotate(0deg);
   }
-  to {
+to {
       top: calc(100% - 265px);
       left: calc(100% - 265px);
       transform: rotate(45deg);
@@ -82,7 +84,7 @@ html {
     bottom: 0;
     transform: rotate(0deg);
   }
-  to {
+to {
       bottom: calc(100% - 265px);
       left: calc(100% - 265px);
       transform: rotate(45deg);
@@ -95,7 +97,7 @@ html {
     bottom: 0;
     transform: rotate(0deg);
   }
-  to {
+to {
       bottom: calc(100% - 265px);
       right: calc(100% - 265px);
       transform: rotate(45deg);
@@ -106,7 +108,7 @@ html {
   from {
     transform: rotate(0deg);
   }
-  to {
+to {
       transform: rotate(360deg);
   }
 }
@@ -115,7 +117,7 @@ html {
   0%, 100% {
     transform: translateY(0);
   }
-  50% {
+50% {
       transform: translateY(-100px);
   }
 }

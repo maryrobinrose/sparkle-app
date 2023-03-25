@@ -25,7 +25,7 @@ body {
     height: 600px;
     background-color: #FFF3FC;
     border: 7px solid black;
-  }
+}
 
 .main-message-title {
     margin-top: -50px;
@@ -100,20 +100,6 @@ body {
     color: #fff;
     text-transform: lowercase;
 }
-
-.button-shopping-bag {
-    width: 50px;
-    height: 80px;
-    margin-top: 30px;
-    margin-left: 900px;
-    padding-top: 20px;
-    background-color: transparent;
-    background-image: url("images/heart-bag.svg");
-    cursor: pointer;
-    border: none;
-    font-size: 48px;
-    font-family: 'VT323-Regular';
-}
   
 .button-primary:hover {
     background-color: #8F00FF;
@@ -130,109 +116,6 @@ body {
 
 .button-back:hover {
     background-image: url("images/button-back-hover.svg");
-}
-
-.button-delete-cancel {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    margin-left: -120px;
-    background-color: transparent;
-    background-image: url("images/button-delete-cancel.svg");
-    cursor: pointer;
-    border: none;
-}
-
-.button-edit {
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin-left: -120px;
-    background-color: transparent;
-    background-image: url("images/button-edit.svg");
-    cursor: pointer;
-    border: none;
-}
-
-
-ul {
-    width: 30px;
-    height: 60px;
-    margin: 150px;
-    list-style-image: url("images/heart.svg");;
-  }
-  
-
-.main-input{
-    outline: none;
-    width: 800px;
-    height: 80px;
-    margin-left: 40px;
-    padding-left: 20px;
-    border: 7px solid black;
-    font-size: 32px;
-    font-family: 'VT323-Regular';
-    text-transform: lowercase;
-}
-
-.error-message {
-    margin-top: 10px;
-    margin-left: 70px;
-    font-size: 24px;
-    color: #FF9900;
-}
-
-.error-input {
-    outline: none;
-    width: 800px;
-    height: 80px;
-    margin-left: 40px;
-    padding-left: 20px;
-    border: 7px solid #FF9900;
-    font-size: 32px;
-    font-family: 'VT323-Regular';
-    text-transform: lowercase;
-} 
-
-.star {
-    position: absolute;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% {
-      transform: translate(0, 0);
-    }
-50% {
-        transform: translate(20px, 20px);
-    }
-100% {
-        transform: translate(0, 0);
-    }
-  }
-
-.empty-bag {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 36px;
-}
-
-.item-name {
-    margin-top: -105px;
-    margin-left: 40px;
-    font-size: 36px;
-}
-
-.single-item {
-    margin-top: 300px;
-}
-
-.two-items {
-    margin-top: 200px;
 }
 
 .footer {

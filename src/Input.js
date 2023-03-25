@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Input.css';
 
 const Input = (props) => {
   const { onFormSubmit } = props;
