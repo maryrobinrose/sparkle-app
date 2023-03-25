@@ -113,6 +113,8 @@ li > div {
 
 .total {
     position: fixed;
+    margin-top: 50px;
+    margin-left: 150px;
     top: 60%;
     font-size: 36px;
 }

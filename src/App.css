@@ -44,17 +44,6 @@ body {
     text-align: center;
 }
 
-.enter-dream {
-    margin-top: 50px;
-    margin-left: 40px;
-    font-size: 32px;
-}
-
-.total {
-    margin-top: 50px;
-    margin-left: 150px;
-    font-size: 36px;
-}
 
 .green-square {
     width: 50px;
@@ -125,4 +114,58 @@ body {
     transform: translateX(-50%);
     color: black;
     text-decoration: none;
+}
+
+@media screen and (max-width: 390px) {
+    .main-message {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 600px;
+        background-color: #FFF3FC;
+        border: 7px solid black;
+    }
+    
+    .main-message-title {
+        margin-top: -50px;
+        margin-left:70px;
+        color: white;
+    }
+    
+    .greeting-one {
+        margin-top: 80px;
+        font-size: 48px;
+        text-align: center;
+    }
+    
+    .greeting-two {
+        font-size: 48px;
+        text-align: center;
+    }
+    
+    .pink-title {
+        width: 250px;
+        height: 50px;
+        margin-top: -50px;
+        margin-left: 50px;
+        background-color: #FF89E5;
+    }
+    
+    .horizonal-line {
+        width: 300px;
+        height: 7px;
+        background-color: black;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        text-decoration: none;
+    }
+        
 }
