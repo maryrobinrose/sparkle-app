@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import Confirmation from './Confirmation';
+import Footer from './Footer';
+import Header from './Header';
 import Home from './Home';
 import Input from './Input';
 import ShoppingBag from './ShoppingBag';
-import Confirmation from './Confirmation';
-import Header from './Header';
-import Footer from './Footer';
 import Stars from './Stars';
 import './App.css';
 
