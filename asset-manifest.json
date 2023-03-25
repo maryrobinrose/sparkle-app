@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sparkle-app/static/css/main.fe9974a7.css",
+    "main.css": "/sparkle-app/static/css/main.c9e1d810.css",
     "main.js": "/sparkle-app/static/js/main.a11dd5fe.js",
     "static/media/background.png": "/sparkle-app/static/media/background.e6aeb48e0e6276ef34af.png",
     "static/media/VT323-Regular.ttf": "/sparkle-app/static/media/VT323-Regular.2bc43ad8eb2f60b39f27.ttf",
@@ -16,11 +16,11 @@
     "static/media/button-back-hover.svg": "/sparkle-app/static/media/button-back-hover.e443fc8d6670f842c52c.svg",
     "static/media/button-back.svg": "/sparkle-app/static/media/button-back.2002bddbafd736db824d.svg",
     "static/media/button-save.svg": "/sparkle-app/static/media/button-save.61477a43fd3be128ef73.svg",
-    "main.fe9974a7.css.map": "/sparkle-app/static/css/main.fe9974a7.css.map",
+    "main.c9e1d810.css.map": "/sparkle-app/static/css/main.c9e1d810.css.map",
     "main.a11dd5fe.js.map": "/sparkle-app/static/js/main.a11dd5fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe9974a7.css",
+    "static/css/main.c9e1d810.css",
     "static/js/main.a11dd5fe.js"
   ]
 }
