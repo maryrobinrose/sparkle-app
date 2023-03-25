@@ -120,6 +120,7 @@ li > div {
 }
 
 @media screen and (max-width: 390px) {
+    
     .empty-bag {
         position: fixed;
         top: 40%;
@@ -218,7 +219,7 @@ li > div {
         height: 40px;
         margin-left: 10px;
         border: 7px solid #FF9900;
-        font-size: 32px;
+        font-size: 16px;
         font-family: 'VT323-Regular';
         text-transform: lowercase;
     }
