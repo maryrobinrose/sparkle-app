@@ -32,16 +32,16 @@
     
     .delivery-text {
         position: absolute;
-        top: 10px;
-        left: 0px;
+        left: 30px;
         transform: rotate(25deg);
+        font-size: 12px;
         font-family: 'PressStart2P-Regular';
     }
     
     .star-container {
         position: relative;
-        margin-top: -260px;
-        margin-left: 750px;
+        margin-top: -300px;
+        margin-left: 80px;
     }
     
     .asterisk {
@@ -56,7 +56,9 @@
     }
     
     .confirmation {
-        margin-top: 180px;
+        position: relative; 
+        z-index: 9999; 
+        margin-top: 220px;
         font-size: 36px;
         text-align: center;
     }
