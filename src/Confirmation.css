@@ -27,3 +27,38 @@
     font-size: 48px;
     text-align: center;
 }
+
+@media screen and (max-width: 390px) {
+    
+    .delivery-text {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        transform: rotate(25deg);
+        font-family: 'PressStart2P-Regular';
+    }
+    
+    .star-container {
+        position: relative;
+        margin-top: -260px;
+        margin-left: 750px;
+    }
+    
+    .asterisk {
+        position: fixed;
+        width: 240px;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    
+    .confirmation {
+        margin-top: 200px;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+}
