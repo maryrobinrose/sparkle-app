@@ -70,8 +70,8 @@
     
     .enter-dream {
         margin-top: 50px;
-        margin-left: 40px;
-        font-size: 32px;
+        margin-left: 30px;
+        font-size: 24px;
     }
     
     .main-input {
@@ -101,9 +101,9 @@
     .error-message {
         position: absolute;
         width: 400px;
-        margin-top: 10px;
-        margin-left: 45px;
-        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 30px;
+        font-size: 16px;
         color: #FF9900;
     }
 }

@@ -131,7 +131,8 @@ li > div {
     ul {
         width: 0px;
         height: 60px;
-        margin: 150px;
+        margin-left: 100px;
+        margin-top: 135px;
         list-style-image: url("images/heart.svg");;
     }
     
@@ -143,18 +144,18 @@ li > div {
     .item-name {
         position: absolute;
         top: 110px;
-        width: 400px;
+        width: 200px;
         margin-top: -105px;
-        margin-left: 20px !important;
+        margin-left: 10px !important;
         font-size: 24px;
     }
     
     .single-item {
-        margin-top: 300px;
+        margin-top: 200px;
     }
     
     .two-items {
-        margin-top: 200px;
+        margin-top: 150px;
     }
     
     .button-delete-cancel {
@@ -200,9 +201,9 @@ li > div {
     .edit-input {
         outline: none;
         position: absolute;
-        width: 400px;
+        width: 100px;
         height: 40px;
-        margin-left: 30px;
+        margin-left: 10px;
         padding-left: 10px;
         border: 7px solid black;
         font-size: 32px;
@@ -213,9 +214,9 @@ li > div {
     .edit-error-input {
         outline: none;
         position: absolute;
-        width: 400px;
+        width: 100px;
         height: 40px;
-        margin-left: 30px;
+        margin-left: 10px;
         border: 7px solid #FF9900;
         font-size: 32px;
         font-family: 'VT323-Regular';
@@ -224,18 +225,18 @@ li > div {
     
     .edit-error-message {
         position: absolute;
-        width: 400px;
+        width: 200px;
         margin-top: 60px;
-        margin-left: 45px;
-        font-size: 20px;
+        margin-left: 10px;
+        font-size: 16px;
         color: #FF9900;
     }
     
     .total {
         position: fixed;
         margin-top: 50px;
-        margin-left: 100px;
+        margin-left: 70px;
         top: 60%;
-        font-size: 24px;
+        font-size: 30px;
     }
 }
