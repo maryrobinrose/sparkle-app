@@ -91,25 +91,11 @@ html {
   }
 
   .star-medium-2 {
-    position: absolute;
-    width: 210px;
-    height: 210px;
-    margin-top: 500px;
-    margin-left: 165px;
-    animation-name: moveStarBounce, moveStarRotate;
-    animation-duration: 15s, 20s, 10s;
-    animation-iteration-count: infinite;
+    display: none;
   }
 
   .star-small-2 {
-    position: absolute;
-    width: 210px;
-    height: 210px;
-    margin-top: 600px;
-    margin-left: -10px;
-    animation-name: moveStarBounce, moveStarRotate;
-    animation-duration: 15s, 20s, 10s;
-    animation-iteration-count: infinite;
+    display: none;
   }
   
 }
