@@ -117,6 +117,7 @@ body {
 }
 
 @media screen and (max-width: 390px) {
+
     .main-message {
         position: absolute;
         top: 60%;

@@ -118,3 +118,7 @@ li > div {
     top: 60%;
     font-size: 36px;
 }
+
+@media screen and (max-width: 390px) {
+    
+}
