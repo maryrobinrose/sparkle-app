@@ -1,102 +1,102 @@
 /* ShoppingBag.css */
 
 .empty-bag {
-    font-size: 36px;
     position: fixed;
-    left: 50%;
     top: 40%;
+    left: 50%;
     transform: translateX(-50%);
+    font-size: 36px;
 }
 
 ul {
-    list-style-image: url("images/heart.svg");
     width: 30px;
     height: 60px;
+    list-style-image: url("images/heart.svg");
   }
 
-  .total {
-    position: fixed;
-    font-size: 36px;
-    top: 60%;
+.total {
+      position: fixed;
+      top: 60%;
+      font-size: 36px;
   }
 
-  li > div {
-    position: relative;
-    margin-bottom: -100px;
+li > div {
+      position: relative;
+      margin-bottom: -100px;
   }
   
-  .button-delete-cancel {
-    width: 20px;
-    height: 20px;
-    border: none;
-    background-color: transparent;
-    background-image: url("images/button-delete-cancel.svg");
-    cursor: pointer;
-    position: absolute;
-    top: -75px; 
+.button-delete-cancel {
+      position: absolute;
+      top: -75px;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      background-image: url("images/button-delete-cancel.svg");
+      cursor: pointer;
+      border: none;
   }
   
-  .button-edit {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    background-image: url("images/button-edit.svg");
-    cursor: pointer;
-    position: absolute;
-    top: 40px;
+.button-edit {
+      position: absolute;
+      top: 40px;
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+      background-image: url("images/button-edit.svg");
+      cursor: pointer;
+      border: none;
   }
 
-  .button-save {
-    width: 20px;
-    height: 16px;
-    border: none;
-    background-color: transparent;
-    background-image: url("images/button-save.svg");
-    cursor: pointer;
-    position: absolute;
-    top: 40px;
-    left: -120px;
+.button-save {
+      position: absolute;
+      top: 40px;
+      left: -120px;
+      width: 20px;
+      height: 16px;
+      background-color: transparent;
+      background-image: url("images/button-save.svg");
+      cursor: pointer;
+      border: none;
   }
 
 .item-name {
-    font-size: 36px;
-    width: 400px;
     position: absolute;
     top: 110px;
+    width: 400px;
     margin-left: 20px !important;
+    font-size: 36px;
 }
 
 .edit-input {
-    font-family: 'VT323-Regular';
-    font-size: 32px;
-    text-transform: lowercase;
-    width: 400px;
-    height: 40px;
-    border: 7px solid black;
     outline: none;
     position: absolute;
+    width: 400px;
+    height: 40px;
     margin-left: 30px;
     padding-left: 10px;
+    border: 7px solid black;
+    font-size: 32px;
+    font-family: 'VT323-Regular';
+    text-transform: lowercase;
 }
 
 .edit-error-message {
-    color: #FF9900;
-    width: 400px;
-    margin-left: 45px;
-    margin-top: 60px;
-    font-size: 20px;
     position: absolute;
+    width: 400px;
+    margin-top: 60px;
+    margin-left: 45px;
+    font-size: 20px;
+    color: #FF9900;
 }
 
 .edit-error-input {
-    font-family: 'VT323-Regular';
-    text-transform: lowercase;
+    outline: none;
+    position: absolute;
     width: 400px;
     height: 40px;
+    margin-left: 30px;
     border: 7px solid #FF9900;
     font-size: 32px;
-    outline: none;
-    margin-left: 30px;
-    position: absolute;
+    font-family: 'VT323-Regular';
+    text-transform: lowercase;
 }

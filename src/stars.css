@@ -1,6 +1,6 @@
 html {
-  overflow-x: hidden;
-  overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .star-large {
@@ -31,36 +31,36 @@ html {
 }
 
 .star-large-2 {
-  position: absolute;
-  margin-left: 1000px;
-  margin-top: 200px;
-  width: 265px;
-  height: 265px;
-  animation-name: moveStarBounce, moveStarRotate;
-  animation-duration: 15s, 20s, 10s;
-  animation-iteration-count: infinite;
+    position: absolute;
+    width: 265px;
+    height: 265px;
+    margin-top: 200px;
+    margin-left: 1000px;
+    animation-name: moveStarBounce, moveStarRotate;
+    animation-duration: 15s, 20s, 10s;
+    animation-iteration-count: infinite;
 }
 
 .star-medium-2 {
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 600px;
-  width: 210px;
-  height: 210px;
-  animation-name: moveStarBounce, moveStarRotate;
-  animation-duration: 15s, 20s, 10s;
-  animation-iteration-count: infinite;
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-top: 600px;
+    margin-left: 40px;
+    animation-name: moveStarBounce, moveStarRotate;
+    animation-duration: 15s, 20s, 10s;
+    animation-iteration-count: infinite;
 }
 
 .star-small-2 {
-  position: absolute;
-  margin-left: 400px;
-  margin-top: 10px;
-  width: 160px;
-  height: 160px;
-  animation-name: moveStarBounce, moveStarRotate;
-  animation-duration: 15s, 20s, 10s;
-  animation-iteration-count: infinite;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-top: 10px;
+    margin-left: 400px;
+    animation-name: moveStarBounce, moveStarRotate;
+    animation-duration: 15s, 20s, 10s;
+    animation-iteration-count: infinite;
 }
   
 @keyframes moveStarLarge {
@@ -70,9 +70,9 @@ html {
     transform: rotate(0deg);
   }
   to {
-    left: calc(100% - 265px);
-    top: calc(100% - 265px);
-    transform: rotate(45deg);
+      top: calc(100% - 265px);
+      left: calc(100% - 265px);
+      transform: rotate(45deg);
   }
 }
   
@@ -83,9 +83,9 @@ html {
     transform: rotate(0deg);
   }
   to {
-    left: calc(100% - 265px);
-    bottom: calc(100% - 265px);
-    transform: rotate(45deg);
+      bottom: calc(100% - 265px);
+      left: calc(100% - 265px);
+      transform: rotate(45deg);
   }
 }
 
@@ -96,9 +96,9 @@ html {
     transform: rotate(0deg);
   }
   to {
-    right: calc(100% - 265px);
-    bottom: calc(100% - 265px);
-    transform: rotate(45deg);
+      bottom: calc(100% - 265px);
+      right: calc(100% - 265px);
+      transform: rotate(45deg);
   }
 }
 
@@ -107,7 +107,7 @@ html {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
   
@@ -116,6 +116,6 @@ html {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-100px);
+      transform: translateY(-100px);
   }
 }
