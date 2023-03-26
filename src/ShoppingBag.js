@@ -32,10 +32,6 @@ const ShoppingBag = (props) => {
     setEditing(false);
   };
 
-  const isSingleItem = props.items.length === 1;
-  const isTwoItems = props.items.length === 2;
-
-  // Limit the items to three
   const limitedItems = props.items.slice(0, 3);
 
   return (
@@ -52,7 +48,7 @@ const ShoppingBag = (props) => {
         </div>
       ) : (
         <>
-         <ul className={isSingleItem ? 'single-item' : isTwoItems ? 'two-items' : ''}>
+        <ul>
             {limitedItems.map((item, index) => (
               <li>
                 {editing && selectedItemIndex === index ? (

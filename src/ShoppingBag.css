@@ -151,14 +151,6 @@ li > div {
         font-size: 24px;
     }
     
-    .single-item {
-        margin-top: 200px;
-    }
-    
-    .two-items {
-        margin-top: 150px;
-    }
-    
     .button-delete-cancel {
         display: block;
         position: absolute;
