@@ -38,7 +38,7 @@ const Input = (props) => {
       <div className="vertical-line"></div>
       <div className="horizonal-line"></div>
       <h1 className="main-message-title">Sparkle App</h1>
-      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}></button>
+      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
       <p className="enter-dream">Enter your dream here:</p>
       <form onSubmit={handleSubmit}>
         <input 
