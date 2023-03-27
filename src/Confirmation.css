@@ -28,6 +28,43 @@
     text-align: center;
 }
 
+@media screen and (max-width: 820px) {
+    
+    .delivery-text {
+        position: absolute;
+        left: 30px;
+        transform: rotate(25deg);
+        font-size: 12px;
+        font-family: 'PressStart2P-Regular';
+    }
+    
+    .star-container {
+        position: relative;
+        margin-top: -300px;
+        margin-left: 500px;
+    }
+    
+    .asterisk {
+        position: fixed;
+        width: 240px;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .confirmation {
+        position: relative; 
+        z-index: 9999; 
+        margin-top: 400px;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+}
+
 @media screen and (max-width: 390px) {
     
     .delivery-text {
