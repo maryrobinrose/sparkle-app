@@ -36,7 +36,7 @@
     
     .marquee {
         animation: marquee 40s infinite linear;
-        font-size: 64px;
+        font-size: 60px;
         font-family: 'PressStart2P-Regular';
         color: black;
         text-decoration: none;
