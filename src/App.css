@@ -116,6 +116,59 @@ body {
     text-decoration: none;
 }
 
+@media screen and (max-width: 820px) {
+
+    .main-message {
+        position: absolute;
+        top: 65%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        width: 750px;
+        height: 900px;
+        background-color: #FFF3FC;
+        border: 7px solid black;
+    }
+    
+    .main-message-title {
+        margin-top: -50px;
+        margin-left:70px;
+        color: white;
+    }
+    
+    .greeting-one {
+        margin-top: 200px;
+        font-size: 72px;
+        text-align: center;
+    }
+    
+    .greeting-two {
+        font-size: 72px;
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .pink-title {
+        width: 700px;
+        height: 50px;
+        margin-top: -50px;
+        margin-left: 50px;
+        background-color: #FF89E5;
+    }
+    
+    .horizonal-line {
+        width: 750px;
+        height: 7px;
+        background-color: black;
+    }
+
+    .footer {
+        position: fixed;
+        color: black;
+        text-decoration: none;
+    }
+        
+}
+
 @media screen and (max-width: 390px) {
 
     .main-message {
