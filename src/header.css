@@ -28,7 +28,27 @@
         transform: translateX(0);
     }
     100% {
-    transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .marquee-container {
+        width: 1000px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .marquee {
+        animation: marquee 40s infinite linear;
+        font-size: 80px;
+        font-family: 'PressStart2P-Regular';
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+        white-space: nowrap;
     }
 }
 
