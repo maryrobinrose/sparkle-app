@@ -62,18 +62,13 @@ body {
     background-image: url("images/button-back-hover.svg");
 }
 
-.vertical-line {
-    width: 7px;
-    height: 57px;
-    background-color: black;
-}
-
 .pink-title {
     position: relative;
     width: 950px;
     height: 50px;
     background-color: #FF89E5;
     border-bottom: 7px solid black;
+    border-left: 7px solid black;
 }
 
 .welcome-message {

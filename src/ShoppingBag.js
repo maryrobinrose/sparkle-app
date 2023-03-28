@@ -36,11 +36,9 @@ const ShoppingBag = (props) => {
 
   return (
     <div className="main-message">
+      <h1 className="main-message-title">Sparkle App</h1>
       <button className="button-back" alt="Go back" onClick={() => navigate('/input')}></button>
       <div className="pink-title"></div>
-      <div className="vertical-line"></div>
-      <div className="horizonal-line"></div>
-      <h1 className="main-message-title">Sparkle App</h1>
       {props.items.length === 0 ? (
         <div>
           <p className="empty-bag">Your bag is empty</p>

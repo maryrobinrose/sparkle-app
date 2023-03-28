@@ -9,36 +9,31 @@
 }
 
 ul {
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    transform: translateX(-50%);
     width: 30px;
     height: 60px;
-    margin: 150px;
     list-style-image: url("images/heart.svg");;
 }
 
 li > div {
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: 30px;
 }
 
 .item-name {
     position: absolute;
     top: 110px;
+    overflow: hidden;
     width: 400px;
+    max-width: 400px;
     margin-top: -105px;
     margin-left: 20px !important;
     font-size: 36px;
-    white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 400px;
-}
-
-.single-item {
-    margin-top: 300px;
-}
-
-.two-items {
-    margin-top: 200px;
+    white-space: nowrap;
 }
 
 .button-delete-cancel {
@@ -117,8 +112,8 @@ li > div {
 
 .total {
     position: fixed;
-    margin-top: 50px;
-    margin-left: 150px;
-    top: 60%;
+    top: 50%;
+    left: 35%;
+    transform: translateX(-50%);
     font-size: 36px;
 }

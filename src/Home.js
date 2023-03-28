@@ -12,7 +12,6 @@ const Home = () => {
     <div className="main-message">
       <h1 className="main-message-title">Sparkle App</h1>
       <div className="green-square"></div>
-      <div className="vertical-line"></div>
       <div className="pink-title"></div>
       <div className="welcome-message">
         <p className="greeting-one">Welcome to Sparkle App!</p>

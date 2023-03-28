@@ -35,7 +35,6 @@ const Input = (props) => {
     <div className="main-message">
       <h1 className="main-message-title">Sparkle App</h1>
       <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
-      <div className="vertical-line"></div>
       <div className="pink-title"></div>
       <button className="button-shopping-bag" alt="Shopping bag" onClick={handleGoToCart}>{cart.length}</button>
       <div></div>
