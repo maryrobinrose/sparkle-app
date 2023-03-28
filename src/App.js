@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-    {/* <Stars /> */}
+    <Stars />
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
