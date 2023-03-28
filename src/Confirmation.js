@@ -13,11 +13,9 @@ const Confirmation = ({ onButtonClick }) => {
 
   return (
     <div className="main-message">
+      <h1 className="main-message-title">Sparkle App</h1>
       <div className="green-square"></div>
       <div className="pink-title"></div>
-      <div className="vertical-line"></div>
-      <div className="horizonal-line"></div>
-      <h1 className="main-message-title">Sparkle App</h1>
       <p className="confirmation">Your dreams are on the way!</p>
       <div className="star-container">
         <img src={starMedium} alt="star-medium" />

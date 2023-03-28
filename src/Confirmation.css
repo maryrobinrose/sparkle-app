@@ -9,21 +9,25 @@
 }
 
 .star-container {
-    position: relative;
-    margin-top: -260px;
-    margin-left: 750px;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    transform: translateX(-50%);
 }
 
 .asterisk {
-    position: fixed;
-    bottom: 2px;
+    position: absolute;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 20px;
 }
 
 .confirmation {
-    margin-top: 220px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
     font-size: 48px;
     text-align: center;
 }
