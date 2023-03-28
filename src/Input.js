@@ -33,12 +33,12 @@ const Input = (props) => {
 
   return (
     <div className="main-message">
-      <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
-      <div className="pink-title"></div>
-      <div className="vertical-line"></div>
-      <div className="horizonal-line"></div>
       <h1 className="main-message-title">Sparkle App</h1>
-      <button className="button-shopping-bag" alt="Amount of items in shopping bag" onClick={handleGoToCart}>{cart.length}</button>
+      <button className="button-back" alt="Go back" onClick={() => navigate('/')}></button>
+      <div className="vertical-line"></div>
+      <div className="pink-title"></div>
+      <button className="button-shopping-bag" alt="Shopping bag" onClick={handleGoToCart}>{cart.length}</button>
+      <div></div>
       <p className="enter-dream">Enter your dream here:</p>
       <form onSubmit={handleSubmit}>
         <input 

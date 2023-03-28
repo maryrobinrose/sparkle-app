@@ -1,10 +1,12 @@
 /* Input.css */
 
 .button-shopping-bag {
+    position: absolute;
+    top: 20%;
+    left: 95%;
+    transform: translate(-50%, -50%);
     width: 50px;
     height: 80px;
-    margin-top: 30px;
-    margin-left: 900px;
     padding-top: 20px;
     background-color: transparent;
     background-image: url("images/shopping-bag.svg");
@@ -15,6 +17,10 @@
 }
 
 .enter-dream {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
     margin-top: 50px;
     margin-left: 40px;
     font-size: 32px;
@@ -22,10 +28,12 @@
 
 .main-input {
     outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 800px;
     height: 80px;
-    margin-left: 40px;
-    padding-left: 20px;
     border: 7px solid black;
     font-size: 32px;
     font-family: 'VT323-Regular';
@@ -34,10 +42,12 @@
 
 .error-input {
     outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 800px;
     height: 80px;
-    margin-left: 40px;
-    padding-left: 20px;
     border: 7px solid #FF9900;
     font-size: 32px;
     font-family: 'VT323-Regular';
@@ -46,9 +56,10 @@
 
 .error-message {
     position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
     width: 400px;
-    margin-top: 10px;
-    margin-left: 45px;
     font-size: 20px;
     color: #FF9900;
 }

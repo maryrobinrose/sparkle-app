@@ -49,6 +49,19 @@ body {
     border-bottom: 7px solid black;
 }
 
+.button-back {
+    width: 50px;
+    height: 57px;
+    background-image: url("images/button-back.svg");
+    cursor: pointer;
+    border: none;
+    border-bottom: 7px solid black;
+}
+
+.button-back:hover {
+    background-image: url("images/button-back-hover.svg");
+}
+
 .vertical-line {
     width: 7px;
     height: 57px;
@@ -99,19 +112,6 @@ body {
   
 .button-primary:hover {
     background-color: #8F00FF;
-}
-  
-.button-back {
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-image: url("images/button-back.svg");
-    cursor: pointer;
-    border: none;
-}
-
-.button-back:hover {
-    background-image: url("images/button-back-hover.svg");
 }
 
 .footer {
