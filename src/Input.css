@@ -67,62 +67,62 @@
 @media (max-width: 390px) {
 
     .button-shopping-bag {
-        top: 25%;
-        left: 85%;
-        transform: translate(-50%, -50%);
-        padding: 25px 10px;
-        background-color: transparent;
-        background-image: url("images/shopping-bag.svg");
-        cursor: pointer;
-        border: none;
-        font-size: 48px;
-        font-family: 'VT323-Regular';
-        color: black;
-    }
-    
+            top: 25%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            padding: 25px 10px;
+            background-color: transparent;
+            background-image: url("images/shopping-bag.svg");
+            cursor: pointer;
+            border: none;
+            font-size: 48px;
+            font-family: 'VT323-Regular';
+            color: black;
+        }
+        
     .enter-dream {
-        width: 300px;
-        top: 33%;
-        left: 45%;
-        transform: translate(-50%, -50%);
-        margin-top: 50px;
-        margin-left: 40px;
-        font-size: 24px;
-    }
-    
+            top: 33%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            margin-top: 50px;
+            margin-left: 40px;
+            font-size: 24px;
+        }
+        
     .main-input {
-        outline: none;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 220px;
-        height: 50px;
-        border: 7px solid black;
-        font-size: 24px;
-        font-family: 'VT323-Regular';
-        text-transform: lowercase;
-    }
-    
+            outline: none;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 220px;
+            height: 50px;
+            border: 7px solid black;
+            font-size: 24px;
+            font-family: 'VT323-Regular';
+            text-transform: lowercase;
+        }
+        
     .error-input {
-        outline: none;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 220px;
-        height: 50px;
-        border: 7px solid #FF9900;
-        font-size: 24px;
-        font-family: 'VT323-Regular';
-        text-transform: lowercase;
-    }
-    
+            outline: none;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 220px;
+            height: 50px;
+            border: 7px solid #FF9900;
+            font-size: 24px;
+            font-family: 'VT323-Regular';
+            text-transform: lowercase;
+        }
+        
     .error-message {
-        top: 65%;
-        left: 45%;
-        transform: translate(-50%, -50%);
-        margin-left: 40px;
-        width: 300px;
-        font-size: 18px;
-        color: #FF9900;
-    }
+            top: 65%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            margin-left: 40px;
+            font-size: 18px;
+            color: #FF9900;
+        }
 }

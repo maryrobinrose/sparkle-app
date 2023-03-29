@@ -121,110 +121,109 @@ li > div {
 @media (max-width: 390px) {
 
     .empty-bag {
-        position: fixed;
-        top: 45%;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 36px;
-        text-align: center;
-    }
-    
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            text-align: center;
+        }
+        
     ul {
-        top: 20%;
-        left: 45%;
-        transform: translateX(-50%);
-        width: 30px;
-        height: 60px;
-        list-style-image: url("images/heart.svg");;
-    }
-    
+            top: 15%;
+            left: 45%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 60px;
+            list-style-image: url("images/heart.svg");;
+        }
+        
     li > div {
-        margin-bottom: 20px;
-    }
-    
+            margin-bottom: 10px;
+        }
+        
     .item-name {
-        overflow: hidden;
-        width: 100px;
-        max-width: 400px;
-        font-size: 24px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-    
+            overflow: hidden;
+            width: 100px;
+            max-width: 400px;
+            margin-top: -170px;
+            margin-left: 10px;
+            font-size: 24px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
     .button-delete-cancel {
-        display: block;
-        top: -75px;
-        width: 20px;
-        height: 20px;
-        margin-top: 80px;
-        margin-bottom: 20px;
-        margin-left: -120px;
-        background-color: transparent;
-        background-image: url("images/button-delete-cancel.svg");
-        cursor: pointer;
-        border: none;
-    }
-    
+            display: block;
+            top: -140px;
+            margin-left: -120px;
+            padding: 10px;
+            background-color: transparent;
+            background-image: url("images/button-delete-cancel.svg");
+            cursor: pointer;
+            border: none;
+        }
+        
     .button-edit {
-        display: block;
-
-        top: 40px;
-        width: 24px;
-        height: 24px;
-        margin-left: -120px;
-        background-color: transparent;
-        background-image: url("images/button-edit.svg");
-        cursor: pointer;
-        border: none;
-    }
-    
+            display: block;
+            top: -30px;
+            margin-left: -120px;
+            background-color: transparent;
+            background-image: url("images/button-edit.svg");
+            cursor: pointer;
+            border: none;
+        }
+        
     .button-save {
-
-        top: 40px;
-        left: -120px;
-        width: 20px;
-        height: 16px;
-        background-color: transparent;
-        background-image: url("images/button-save.svg");
-        cursor: pointer;
-        border: none;
-    }
-    
+            display: block;
+            top: -30px;
+            padding: 5px;
+            background-color: transparent;
+            background-image: url("images/button-save.svg");
+            cursor: pointer;
+            border: none;
+        }
+        
     .edit-input {
-        outline: none;
-        width: 120px;
-        height: 30px;
-        margin-left: 10px;
-        padding-left: 10px;
-        border: 7px solid black;
-        font-size: 24px;
-        font-family: 'VT323-Regular';
-        text-transform: lowercase;
-    }
-    
+            outline: none;
+            width: 110px;
+            height: 30px;
+            margin-top: -70px;
+            margin-left: 5px;
+            padding-left: 10px;
+            border: 7px solid black;
+            font-size: 24px;
+            font-family: 'VT323-Regular';
+            text-transform: lowercase;
+        }
+        
     .edit-error-input {
-        outline: none;
-        width: 120px;
-        height: 30px;
-        margin-left: 10px;
-        border: 7px solid #FF9900;
-        font-size: 20px;
-        font-family: 'VT323-Regular';
-        text-transform: lowercase;
-    }
-    
+            outline: none;
+            width: 110px;
+            height: 30px;
+            margin-top: -70px;
+            margin-left: 5px;
+            padding-left: 10px;
+            border: 7px solid #FF9900;
+            font-size: 20px;
+            font-family: 'VT323-Regular';
+            text-transform: lowercase;
+        }
+        
     .edit-error-message {
-        width: 200px;
-        margin-top: 50px;
-        margin-left: 20px;
-        font-size: 16px;
-        color: #FF9900;
-    }
-    
+            width: 200px;
+            margin-top: -15px;
+            margin-left: 10px;
+            font-size: 16px;
+            color: #FF9900;
+        }
+        
     .total {
-        top: 65%;
-        left: 40%;
-        transform: translateX(-50%);
-        font-size: 24px;
-    }
+            top: 66%;
+            left: 55%;
+            transform: translateX(-50%);
+            width: 200px;
+            font-size: 24px;
+            font-weight: bold;
+        }
 }
