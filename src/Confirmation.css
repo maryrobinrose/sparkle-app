@@ -31,3 +31,43 @@
     font-size: 48px;
     text-align: center;
 }
+
+@media (max-width: 390px) {
+
+    .delivery-text {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        transform: rotate(25deg);
+        font-family: 'PressStart2P-Regular';
+        font-size: 12px;
+    }
+    
+    .star-container {
+        position: absolute;
+        top: 15%;
+        left: 65%;
+        transform: translateX(-50%);
+    }
+    
+    .asterisk {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        width: 200px;
+        text-align: center;
+    }
+    
+    .confirmation {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        text-align: center;
+        width: 200px;
+        z-index: 1;
+    }
+}
