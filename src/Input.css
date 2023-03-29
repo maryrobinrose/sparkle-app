@@ -71,8 +71,8 @@
         top: 25%;
         left: 85%;
         transform: translate(-50%, -50%);
-        width: 50px;
-        height: 80px;
+        width: 50px !important;
+        height: 80px !important;
         padding-top: 20px;
         background-color: transparent;
         background-image: url("images/shopping-bag.svg");
