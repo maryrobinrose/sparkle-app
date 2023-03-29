@@ -71,25 +71,39 @@ html {
     display: none;
   }
   
-.star-medium {
-  display: none;
-}
+  .star-medium {
+    display: none;
+  }
 
-.star-small {
-  display: none;
-}
+  .star-small {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-top: 500px;
+    margin-left: 160px;
+    animation-name: moveStarBounce, moveStarRotate;
+    animation-duration: 15s, 20s, 10s;
+    animation-iteration-count: infinite;
+  }
 
-.star-large-2 {
-  display: none;
-}
+  .star-large-2 {
+    display: none;
+  }
 
-.star-medium-2 {
-  display: none;
-}
+  .star-medium-2 {
+    display: none;
+  }
 
-.star-small-2 {
-  display: none;
-}
+  .star-small-2 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    margin-top: 0px;
+    margin-left: 10px;
+    animation-name: moveStarBounce, moveStarRotate;
+    animation-duration: 15s, 20s, 10s;
+    animation-iteration-count: infinite;
+  }
 }
   
 @keyframes moveStarLarge {
