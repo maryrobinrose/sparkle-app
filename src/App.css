@@ -138,7 +138,7 @@ body {
     }
     
     .main-message-title {
-        left: 45%;
+        left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         z-index: 1;
