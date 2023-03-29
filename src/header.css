@@ -29,6 +29,7 @@
         text-decoration: none;
         text-transform: capitalize;
         white-space: nowrap;
+        overflow: hidden;
     }
 }
 
