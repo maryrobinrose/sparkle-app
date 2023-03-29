@@ -1,7 +1,7 @@
 /* ShoppingBag.css */
 
 .empty-bag {
-    position: fixed;
+    position: absolute;
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
@@ -9,9 +9,9 @@
 }
 
 ul {
-    position: fixed;
-    top: 25%;
-    left: 30%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
     transform: translateX(-50%);
     width: 30px;
     height: 60px;
@@ -20,7 +20,7 @@ ul {
 
 li > div {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .item-name {
@@ -111,8 +111,8 @@ li > div {
 }
 
 .total {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 65%;
     left: 35%;
     transform: translateX(-50%);
     font-size: 36px;
