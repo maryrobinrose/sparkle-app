@@ -16,6 +16,22 @@
     white-space: nowrap;
 }
 
+@media (max-width: 390px) {
+
+    .marquee {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        animation: marquee 10s infinite linear;
+        font-size: 72px;
+        font-family: 'PressStart2P-Regular';
+        color: black;
+        text-decoration: none;
+        text-transform: capitalize;
+        white-space: nowrap;
+    }
+}
+
 @keyframes marquee {
     0% {
         transform: translateX(0);

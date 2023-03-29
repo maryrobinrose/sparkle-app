@@ -64,6 +64,33 @@ html {
     animation-duration: 15s, 20s, 10s;
     animation-iteration-count: infinite;
 }
+
+@media (max-width: 390px) {
+
+  .star-large {
+    display: none;
+  }
+  
+.star-medium {
+  display: none;
+}
+
+.star-small {
+  display: none;
+}
+
+.star-large-2 {
+  display: none;
+}
+
+.star-medium-2 {
+  display: none;
+}
+
+.star-small-2 {
+  display: none;
+}
+}
   
 @keyframes moveStarLarge {
   from {
