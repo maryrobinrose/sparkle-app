@@ -117,3 +117,125 @@ li > div {
     transform: translateX(-50%);
     font-size: 36px;
 }
+
+@media (max-width: 390px) {
+
+    .empty-bag {
+        position: fixed;
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    ul {
+        position: fixed;
+        top: 25%;
+        left: 45%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 60px;
+        list-style-image: url("images/heart.svg");;
+    }
+    
+    li > div {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .item-name {
+        position: absolute;
+        top: 110px;
+        overflow: hidden;
+        width: 400px;
+        max-width: 400px;
+        margin-top: -105px;
+        margin-left: 20px !important;
+        font-size: 24px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .button-delete-cancel {
+        display: block;
+        position: absolute;
+        top: -75px;
+        width: 20px;
+        height: 20px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        margin-left: -120px;
+        background-color: transparent;
+        background-image: url("images/button-delete-cancel.svg");
+        cursor: pointer;
+        border: none;
+    }
+    
+    .button-edit {
+        display: block;
+        position: absolute;
+        top: 40px;
+        width: 24px;
+        height: 24px;
+        margin-left: -120px;
+        background-color: transparent;
+        background-image: url("images/button-edit.svg");
+        cursor: pointer;
+        border: none;
+    }
+    
+    .button-save {
+        position: absolute;
+        top: 40px;
+        left: -120px;
+        width: 20px;
+        height: 16px;
+        background-color: transparent;
+        background-image: url("images/button-save.svg");
+        cursor: pointer;
+        border: none;
+    }
+    
+    .edit-input {
+        outline: none;
+        position: absolute;
+        width: 120px;
+        height: 30px;
+        margin-left: 10px;
+        padding-left: 10px;
+        border: 7px solid black;
+        font-size: 24px;
+        font-family: 'VT323-Regular';
+        text-transform: lowercase;
+    }
+    
+    .edit-error-input {
+        outline: none;
+        position: absolute;
+        width: 120px;
+        height: 30px;
+        margin-left: 10px;
+        border: 7px solid #FF9900;
+        font-size: 20px;
+        font-family: 'VT323-Regular';
+        text-transform: lowercase;
+    }
+    
+    .edit-error-message {
+        position: absolute;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #FF9900;
+    }
+    
+    .total {
+        position: fixed;
+        top: 65%;
+        left: 45%;
+        transform: translateX(-50%);
+        font-size: 30px;
+    }
+}
